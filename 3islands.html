@@ -148,6 +148,57 @@
                 color: black;
             }
         }
+
+        /* Schedule Table Styles */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .schedule-table th {
+            background-color: #f0f8ff;
+            color: var(--primary-color);
+            width: 70px;
+            text-align: center;
+        }
+
+        .schedule-table td strong {
+            color: #d35400;
+        }
+
+        /* Checklist Styles */
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            border: 1px dashed #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fffaf0;
+        }
+
+        .checklist li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        .checklist li::before {
+            content: "⬜";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1rem;
+        }
     </style>
 </head>
 
@@ -200,16 +251,53 @@
             <ul>
                 <li><strong>07:30〜17:00:</strong> 海へ (シージャック)</li>
             </ul>
-            <h4>👩👧 奥様＆お嬢様：竹富島へ</h4>
+            <h4>👩👧 奥様＆お嬢様：竹富島へ (竹富島おさんぽしおり)</h4>
             <ul>
-                <li><strong>09:30:</strong> 石垣港発 ➡ <a href="https://painusima.com/" target="_blank">竹富島</a> (フェリー)</li>
-                <li><strong>🌟 奥様にお任せフリープラン 🌟</strong>
-                    <br>✨ 水牛車、カフェ巡り、レンタサイクルなど、自由気ままに島時間をお楽しみください。
-                </li>
-                <li><strong>15:30:</strong> 竹富島発 ➡ 石垣島へ</li>
+                <li><strong>09:30:</strong> 石垣港発 ➡ <a href="https://painusima.com/" target="_blank">竹富島</a>
+                    (フェリー約15分)</li>
+            </ul>
+
+            <table class="schedule-table">
+                <tr>
+                    <th>10:30</th>
+                    <td><strong>水牛車観光スタート</strong> 🐂<br>三線の音色を聞きながら集落をゆったり一周</td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                    <td><strong>お楽しみ島ランチ</strong> 🍤<br>「<a href="https://maps.app.goo.gl/Km8fM4CSXRu11WDj6"
+                            target="_blank">かにふ</a>」or「<a href="https://share.google/S5xCQq3q5ANIlnX3N"
+                            target="_blank">ガーデンあさひ</a>」で旬の車海老を堪能！</td>
+                </tr>
+                <tr>
+                    <th>13:30</th>
+                    <td><strong>集落おさんぽ＆ビーチへ</strong> 👣<br>
+                        ・なごみの塔（赤瓦の家並みを一望）<br>
+                        ・竹富郵便局（赤い丸ポストと記念撮影）📮<br>
+                        ・カイジ浜（星の砂探し）⭐
+                    </td>
+                </tr>
+                <tr>
+                    <th>15:30</th>
+                    <td><strong>古民家カフェで休憩</strong> 🍨<br>「ぱーらー願寿屋」や「ちろりん村」でスイーツタイム</td>
+                </tr>
+                <tr>
+                    <th>16:30</th>
+                    <td><strong>竹富港発</strong> ➡ 石垣島へ<br>※カイジ浜から港へは巡回バスで移動 🚌</td>
+                </tr>
+            </table>
+
+            <ul class="checklist">
+                <li><strong>歩きやすい靴</strong>：集落は白砂なのでスニーカーがベスト 👟</li>
+                <li><strong>水筒・飲み物</strong>：ビーチ周辺は自販機が少ないので準備して 💧</li>
+                <li><strong>薄手の羽織るもの</strong>：2月の海風対策にカーディガンがあると安心 🧥</li>
+                <li><strong>小銭</strong>：巡回バス（大人300円/小児150円程度）の支払いに 🪙</li>
+            </ul>
+
+            <ul>
                 <li><strong>18:00:</strong> 父が迎えに行く。</li>
-                <li><strong>夕食:</strong> 🍽️ <a href="https://maps.app.goo.gl/CGZbBTvuouaEBk1T8"
-                        target="_blank">石垣牛と海鮮の店 てっぺん</a> (※未予約)</li>
+                <li><strong>18:30:</strong> 夕食 🍽️ <a href="https://maps.app.goo.gl/CGZbBTvuouaEBk1T8"
+                        target="_blank">石垣牛と海鮮の店 てっぺん</a> (✅ 予約済み)
+                </li>
             </ul>
         </div>
 
