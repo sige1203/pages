@@ -1,0 +1,5 @@
+Google Photosの共有リンク機能について:
+1. Google Photosの公開共有リンクはSPA（シングルページアプリケーション）であり、HTML内に直接画像URLが含まれていない。
+2. そのため、単なるスクレイピング（JavaScriptからの`fetch`など）では画像一覧を取得できない（CORS制限もある）。
+3. サーバーサイドの処理（PythonやNode.js）でPuppeteerなどのヘッドレスブラウザを使うか、正式なGoogle Photos Library APIを使う必要がある。
+4. ただし、このプロジェクトはGitHub Pages（静的サイトホスティング）であり、バックエンドサーバーを持たない。
