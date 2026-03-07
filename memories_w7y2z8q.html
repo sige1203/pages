@@ -339,7 +339,7 @@
         }
 
         /* Collapsible Grid */
-        .photo-grid.collapsed .photo-card:nth-child(n+4) {
+        .photo-grid.collapsed .photo-card:nth-child(n+10) {
             display: none;
         }
 
@@ -1813,7 +1813,7 @@
             const grids = document.querySelectorAll('.photo-grid');
             grids.forEach(grid => {
                 const cards = grid.querySelectorAll('.photo-card');
-                if (cards.length > 3) {
+                if (cards.length > 9) {
                     grid.classList.add('collapsed');
 
                     const btn = document.createElement('button');
