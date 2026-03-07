@@ -8,15 +8,19 @@
 1. 旅行後、ベストショットを数十枚程度ピックアップします。
 2. （推奨）Webでの表示が重くならないように、事前にファイルサイズを圧縮（長辺1920px程度、1枚あたり数百KB〜1MB程度が目安）しておくとスムーズです。
 3. ピックアップした写真ファイルを、以下の **イベントごとのフォルダ** 内にコピー＆ペーストして保存します。
-   - `img/memories/01_arrival/`（到着・フサキリゾート）
-   - `img/memories/02_dinner_shintenchi/`（琉球新天地ディナー）
-   - `img/memories/03_taketomi_buffalo/`（竹富島・水牛車）
-   - `img/memories/04_dinner_teppen/`（てっぺんディナー）
-   - `img/memories/05_diving/`（ダイビング）
-   - `06_kabira_glassboat/`（川平湾グラスボート）
-   - `07_dinner_hitoshi/`（ひとしディナー）
-   - `08_iriomote_adventure/`（西表島カヌー＆洞窟）
-   - ※まだないイベント（Day 4の夕食など）の場合は、新しく `09_xxx/` のようなフォルダを作って入れていただいても構いません。
+   - `img/memories/01_haneda_departure/`（羽田空港出発と飛行機の中）
+   - `img/memories/02_ishigaki_arrival/`（石垣空港到着）
+   - `img/memories/03_mirumiru/`（ミルミル本舗で休憩）
+   - `img/memories/04_fusaki_relax/`（石垣島到着・リゾートでのんびり）
+   - `img/memories/05_dinner_shintenchi/`（琉球新天地ディナー）
+   - `img/memories/06_day2_diving_father/`（パパのダイビング）
+   - `img/memories/07_taketomi_buffalo/`（竹富島 女子旅さんぽ）
+   - `img/memories/08_dinner_teppen/`（「てっぺん」で石垣牛！）
+   - `img/memories/09_day3_diving_family/`（家族でダイビング！）
+   - `img/memories/10_fusaki_relax_day3/`（フサキリゾートで休憩）
+   - `img/memories/11_dinner_tingara/`（「てぃんがーら」でディナー）
+   - `img/memories/12_iriomote_adventure/`（西表島で大冒険）
+   - `img/memories/13_dinner_day4/`（旅行最後の夕食！）
 
 ## 2. AI（私）に更新を依頼する
 ファイルをご自身のパソコン上（各イベントフォルダ内）に置き終わったら、このチャット画面に戻ってきて、以下のように私に話しかけてください。

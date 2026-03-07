@@ -327,25 +327,76 @@
     </section>
 
     <section class="timeline">
-        <!-- 01 Arrival -->
+        <!-- 01_haneda_departure -->
         <div class="day-panel">
             <div class="day-header">
-                <h2 class="day-title">石垣島到着・リゾートでのんびり</h2>
+                <h2 class="day-title">羽田空港出発と飛行機の中</h2>
                 <span class="day-date">Day 1</span>
             </div>
             <p class="day-desc">
-                無事に到着！フサキビーチリゾートでのんびり。
+                いよいよ旅行に出発！飛行機からの景色にわくわく。
+            </p>
+            <div class="photo-grid">
+                <div class="photo-card" onclick="openModal('img/memories/01_haneda_departure/title.png', '羽田空港を出発！')">
+                    <img src="img/memories/01_haneda_departure/title.png" alt="羽田空港">
+                    <div class="photo-caption">行ってきます！</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 02_ishigaki_arrival -->
+        <div class="day-panel">
+            <div class="day-header">
+                <h2 class="day-title">石垣空港到着</h2>
+                <span class="day-date">Day 1</span>
+            </div>
+            <p class="day-desc">
+                南国・石垣島に到着！あたたかい風と青い空がお出迎え。
+            </p>
+            <div class="photo-grid">
+                <div class="photo-card" onclick="openModal('img/memories/02_ishigaki_arrival/title.png', '石垣空港に到着！')">
+                    <img src="img/memories/02_ishigaki_arrival/title.png" alt="石垣空港">
+                    <div class="photo-caption">到着しました！</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 03_mirumiru -->
+        <div class="day-panel">
+            <div class="day-header">
+                <h2 class="day-title">ミルミル本舗で休憩</h2>
+                <span class="day-date">Day 1</span>
+            </div>
+            <p class="day-desc">
+                絶景を眺めながら、ミルミル本舗の美味しいジェラートでひとやすみ🍦
+            </p>
+            <div class="photo-grid">
+                <div class="photo-card" onclick="openModal('img/memories/03_mirumiru/title.png', 'ミルミル本舗のジェラート')">
+                    <img src="img/memories/03_mirumiru/title.png" alt="ミルミル本舗">
+                    <div class="photo-caption">絶景とジェラート最高！</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 04_fusaki_relax -->
+        <div class="day-panel">
+            <div class="day-header">
+                <h2 class="day-title">フサキリゾートでのんびり</h2>
+                <span class="day-date">Day 1</span>
+            </div>
+            <p class="day-desc">
+                ホテルにチェックイン！フサキビーチでのんびり。
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/01_arrival/fusaki_sunset.png', 'フサキビーチでのサンセット')">
-                    <img src="img/memories/01_arrival/fusaki_sunset.png" alt="サンセット">
+                    onclick="openModal('img/memories/04_fusaki_relax/fusaki_sunset.png', 'フサキビーチでの美しいサンセット')">
+                    <img src="img/memories/04_fusaki_relax/fusaki_sunset.png" alt="サンセット">
                     <div class="photo-caption">フサキビーチの夕焼け</div>
                 </div>
             </div>
         </div>
 
-        <!-- 02 Dinner Shintenchi -->
+        <!-- 05_dinner_shintenchi -->
         <div class="day-panel">
             <div class="day-header">
                 <h2 class="day-title">琉球新天地でディナー</h2>
@@ -356,14 +407,32 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/02_dinner_shintenchi/ishigaki_dinner.png', '琉球新天地の豪華ディナー')">
-                    <img src="img/memories/02_dinner_shintenchi/ishigaki_dinner.png" alt="琉球新天地">
+                    onclick="openModal('img/memories/05_dinner_shintenchi/ishigaki_dinner.png', '琉球新天地の豪華ディナー')">
+                    <img src="img/memories/05_dinner_shintenchi/ishigaki_dinner.png" alt="琉球新天地">
                     <div class="photo-caption">美味しいディナー！</div>
                 </div>
             </div>
         </div>
 
-        <!-- 03 Taketomi Buffalo -->
+        <!-- 06_day2_diving_father -->
+        <div class="day-panel">
+            <div class="day-header">
+                <h2 class="day-title">パパのダイビング</h2>
+                <span class="day-date">Day 2 午前</span>
+            </div>
+            <p class="day-desc">
+                パパは朝からダイビングへ出発！美しいサンゴ礁を満喫🤿
+            </p>
+            <div class="photo-grid">
+                <div class="photo-card"
+                    onclick="openModal('img/memories/06_day2_diving_father/diving.png', 'パパのダイビング')">
+                    <img src="img/memories/06_day2_diving_father/diving.png" alt="ダイビング">
+                    <div class="photo-caption">サンゴ礁の海へ！</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 07_taketomi_buffalo -->
         <div class="day-panel">
             <div class="day-header">
                 <h2 class="day-title">竹富島 女子旅さんぽ</h2>
@@ -373,19 +442,19 @@
                 ママと娘はのんびりフェリーで竹富島へ。水牛車の揺れと三線の音が心地よい一日。
             </p>
             <div class="photo-grid">
-                <div class="photo-card" onclick="openModal('img/memories/03_taketomi_buffalo/taketomi.png', '竹富島の水牛車')">
-                    <img src="img/memories/03_taketomi_buffalo/taketomi.png" alt="竹富島">
+                <div class="photo-card" onclick="openModal('img/memories/07_taketomi_buffalo/taketomi.png', '竹富島の水牛車')">
+                    <img src="img/memories/07_taketomi_buffalo/taketomi.png" alt="竹富島">
                     <div class="photo-caption">ゆったり水牛車</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/03_taketomi_buffalo/taketomi_relax.png', 'ゆったりとした島時間')">
-                    <img src="img/memories/03_taketomi_buffalo/taketomi_relax.png" alt="竹富島の風景">
+                    onclick="openModal('img/memories/07_taketomi_buffalo/taketomi_relax.png', 'ゆったりとした島時間')">
+                    <img src="img/memories/07_taketomi_buffalo/taketomi_relax.png" alt="竹富島の風景">
                     <div class="photo-caption">赤瓦の集落をおさんぽ</div>
                 </div>
             </div>
         </div>
 
-        <!-- 04 Dinner Teppen -->
+        <!-- 08_dinner_teppen -->
         <div class="day-panel">
             <div class="day-header">
                 <h2 class="day-title">「てっぺん」で石垣牛！</h2>
@@ -396,14 +465,14 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/04_dinner_teppen/ishigaki_dinner.png', 'てっぺんの石垣牛ディナー')">
-                    <img src="img/memories/04_dinner_teppen/ishigaki_dinner.png" alt="石垣牛ディナー">
+                    onclick="openModal('img/memories/08_dinner_teppen/ishigaki_dinner.png', 'てっぺんの石垣牛ディナー')">
+                    <img src="img/memories/08_dinner_teppen/ishigaki_dinner.png" alt="石垣牛ディナー">
                     <div class="photo-caption">絶品！石垣牛</div>
                 </div>
             </div>
         </div>
 
-        <!-- 05 Diving -->
+        <!-- 09_day3_diving_family -->
         <div class="day-panel">
             <div class="day-header">
                 <h2 class="day-title">家族でダイビング！</h2>
@@ -413,50 +482,51 @@
                 世界屈指の海へダイブ！ママはファンダイビング、パパと娘は体験ダイビング。
             </p>
             <div class="photo-grid">
-                <div class="photo-card" onclick="openModal('img/memories/05_diving/diving.png', '家族でのダイビング体験！')">
-                    <img src="img/memories/05_diving/diving.png" alt="ダイビング">
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/diving.png', '家族でのダイビング体験！')">
+                    <img src="img/memories/09_day3_diving_family/diving.png" alt="ダイビング">
                     <div class="photo-caption">海の世界へ！</div>
                 </div>
             </div>
         </div>
 
-        <!-- 06 Kabira Glassboat -->
+        <!-- 10_fusaki_relax_day3 -->
         <div class="day-panel">
             <div class="day-header">
-                <h2 class="day-title">川平湾 グラスボート</h2>
+                <h2 class="day-title">フサキリゾートで休憩</h2>
                 <span class="day-date">Day 3 午後</span>
             </div>
             <p class="day-desc">
-                午後はのんびりグラスボートで海中散歩とお土産ショッピング。
+                ダイビングの後は、ホテルに戻ってリゾート気分でゆったりと休憩。
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_kabira_glassboat/kabira.png', '川平湾でのグラスボート')">
-                    <img src="img/memories/06_kabira_glassboat/kabira.png" alt="川平湾">
-                    <div class="photo-caption">エメラルドグリーンの海</div>
+                    onclick="openModal('img/memories/10_fusaki_relax_day3/kabira.png', 'リゾートでのんびりする様子')">
+                    <img src="img/memories/10_fusaki_relax_day3/kabira.png" alt="フサキリゾート休憩">
+                    <div class="photo-caption">リラックスタイム</div>
                 </div>
             </div>
         </div>
 
-        <!-- 07 Dinner Hitoshi -->
+        <!-- 11_dinner_tingara -->
         <div class="day-panel">
             <div class="day-header">
-                <h2 class="day-title">「ひとし本店」で海鮮ディナー</h2>
+                <h2 class="day-title">「てぃんがーら」でディナー</h2>
                 <span class="day-date">Day 3 夜</span>
             </div>
             <p class="day-desc">
-                夜は超人気店「ひとし本店」の絶品マグロと海鮮で大満足🐟
+                夜は三線のライブを聴きながら、「島唄ライブ居酒屋 てぃんがーら」で島料理を満喫🍽️
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/07_dinner_hitoshi/ishigaki_dinner.png', 'ひとし本店のディナー')">
-                    <img src="img/memories/07_dinner_hitoshi/ishigaki_dinner.png" alt="ひとし">
-                    <div class="photo-caption">マグロが最高！</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/ishigaki_dinner.png', 'てぃんがーらのディナー')">
+                    <img src="img/memories/11_dinner_tingara/ishigaki_dinner.png" alt="てぃんがーら">
+                    <div class="photo-caption">楽しい島唄ライブ！</div>
                 </div>
             </div>
         </div>
 
-        <!-- 08 Iriomote Adventure -->
+        <!-- 12_iriomote_adventure -->
         <div class="day-panel">
             <div class="day-header">
                 <h2 class="day-title">西表島で大冒険！（カヌー＆洞窟）</h2>
@@ -467,14 +537,31 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/08_iriomote_adventure/iriomote.png', 'マングローブをカヌーで進む')">
-                    <img src="img/memories/08_iriomote_adventure/iriomote.png" alt="西表島カヌー">
+                    onclick="openModal('img/memories/12_iriomote_adventure/iriomote.png', 'マングローブをカヌーで進む')">
+                    <img src="img/memories/12_iriomote_adventure/iriomote.png" alt="西表島カヌー">
                     <div class="photo-caption">マングローブ探検</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/08_iriomote_adventure/iriomote_cave.png', '神秘的な洞窟探検！')">
-                    <img src="img/memories/08_iriomote_adventure/iriomote_cave.png" alt="西表島洞窟">
+                    onclick="openModal('img/memories/12_iriomote_adventure/iriomote_cave.png', '神秘的な洞窟探検！')">
+                    <img src="img/memories/12_iriomote_adventure/iriomote_cave.png" alt="西表島洞窟">
                     <div class="photo-caption">ヘッドライトで洞窟へ！</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13_dinner_day4 -->
+        <div class="day-panel">
+            <div class="day-header">
+                <h2 class="day-title">旅行最後の夕食！</h2>
+                <span class="day-date">Day 4 夜</span>
+            </div>
+            <p class="day-desc">
+                西表島から戻り、みんなで美味しい夕食。旅行の思い出を語り合いました🍺
+            </p>
+            <div class="photo-grid">
+                <div class="photo-card" onclick="openModal('img/memories/13_dinner_day4/ishigaki_dinner.png', '最後の夕食')">
+                    <img src="img/memories/13_dinner_day4/ishigaki_dinner.png" alt="夕食">
+                    <div class="photo-caption">楽しかったね！乾杯！</div>
                 </div>
             </div>
         </div>
