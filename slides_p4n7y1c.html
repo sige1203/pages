@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>石垣・竹富・西表 3島周遊プラン プレゼンテーション</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;900&display=swap');
@@ -230,6 +231,12 @@
             width: 140px;
         }
     </style>
+    <script>
+        // 未認証の場合はトップページ（パスワード画面）に戻す
+        if (sessionStorage.getItem("authenticated") !== "true") {
+            window.location.href = "index.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -371,7 +378,7 @@
                 </div>
                 <p style="margin-top: 2rem;">2月の連休は人気シーズンです。<br>
                     ひとし本店の予約、頑張りましょう！</p>
-                <a href="3islands.html"
+                <a href="3islands_x8k9v2m.html"
                     style="background: white; color: #333; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">詳しいプランを見る</a>
             </div>
         </section>

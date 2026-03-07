@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>石垣・竹富・西表 3島周遊ファミリーバカンス 2026</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap');
@@ -200,6 +201,12 @@
             font-size: 1rem;
         }
     </style>
+    <script>
+        // 未認証の場合はトップページ（パスワード画面）に戻す
+        if (sessionStorage.getItem("authenticated") !== "true") {
+            window.location.href = "index.html";
+        }
+    </script>
 </head>
 
 <body>
