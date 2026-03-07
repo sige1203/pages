@@ -337,6 +337,30 @@
             background-color: rgba(0, 0, 0, 0.8);
             color: var(--accent);
         }
+
+        /* Collapsible Grid */
+        .photo-grid.collapsed .photo-card:nth-child(n+4) {
+            display: none;
+        }
+
+        .show-more-btn {
+            display: block;
+            margin: 20px auto 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+        }
+
+        .show-more-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--accent);
+            border-color: var(--accent);
+        }
     </style>
     <script>
         // 未認証の場合はトップページ（パスワード画面）に戻す
@@ -1784,6 +1808,33 @@
                     openModalByIndex(index);
                 };
             });
+
+            // "もっと見る" ボタンの生成
+            const grids = document.querySelectorAll('.photo-grid');
+            grids.forEach(grid => {
+                const cards = grid.querySelectorAll('.photo-card');
+                if (cards.length > 3) {
+                    grid.classList.add('collapsed');
+
+                    const btn = document.createElement('button');
+                    btn.className = 'show-more-btn';
+                    btn.innerText = `さらに写真を見る（全${cards.length}枚）`;
+
+                    btn.onclick = () => {
+                        if (grid.classList.contains('collapsed')) {
+                            grid.classList.remove('collapsed');
+                            btn.innerText = '写真を閉じる';
+                        } else {
+                            grid.classList.add('collapsed');
+                            btn.innerText = `さらに写真を見る（全${cards.length}枚）`;
+                            // 少し上にスクロールして戻る
+                            grid.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    };
+
+                    grid.parentElement.appendChild(btn);
+                }
+            });
         }
 
         function openModalByIndex(index) {
@@ -1832,6 +1883,19 @@
                 modal.style.display = "none";
             }, 300);
         }
+
+        // キーボード操作
+        window.addEventListener('keydown', (e) => {
+            if (modal.style.display === "flex") {
+                if (e.key === "ArrowLeft") {
+                    changeLightboxImage(-1);
+                } else if (e.key === "ArrowRight") {
+                    changeLightboxImage(1);
+                } else if (e.key === "Escape") {
+                    doCloseModal();
+                }
+            }
+        });
 
         // ページ読み込み時にギャラリー初期化
         window.addEventListener('DOMContentLoaded', initGallery);
