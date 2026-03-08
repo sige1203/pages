@@ -275,12 +275,14 @@
             transition: opacity 0.3s ease;
         }
 
-        .modal-content {
+        .modal-content,
+        .modal-video {
             max-width: 90%;
             max-height: 80vh;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             object-fit: contain;
+            display: none;
         }
 
         .modal-caption {
@@ -394,38 +396,34 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/01_haneda_departure/5DB20DAE-9201-46F8-8739-98C8F03D0BAE_1_105_c.jpeg', '写真 1')">
+                    onclick="openModal('img/memories/01_haneda_departure/5DB20DAE-9201-46F8-8739-98C8F03D0BAE_1_105_c.jpeg', '画像 1', false)">
                     <img src="img/memories/01_haneda_departure/5DB20DAE-9201-46F8-8739-98C8F03D0BAE_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                        alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/01_haneda_departure/5EAB1B90-873B-4C3B-82FB-3A5179D07475_1_105_c.jpeg', '写真 2')">
+                    onclick="openModal('img/memories/01_haneda_departure/5EAB1B90-873B-4C3B-82FB-3A5179D07475_1_105_c.jpeg', '画像 2', false)">
                     <img src="img/memories/01_haneda_departure/5EAB1B90-873B-4C3B-82FB-3A5179D07475_1_105_c.jpeg"
-                        alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                        alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/01_haneda_departure/7F0A8EFF-2660-4608-A50D-5C6FE079E721_1_105_c.jpeg', '写真 3')">
+                    onclick="openModal('img/memories/01_haneda_departure/7F0A8EFF-2660-4608-A50D-5C6FE079E721_1_105_c.jpeg', '画像 3', false)">
                     <img src="img/memories/01_haneda_departure/7F0A8EFF-2660-4608-A50D-5C6FE079E721_1_105_c.jpeg"
-                        alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
+                        alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/01_haneda_departure/825F9F7F-284F-4AAE-9FEF-FC7F6701D346_1_105_c.jpeg', '写真 4')">
+                    onclick="openModal('img/memories/01_haneda_departure/825F9F7F-284F-4AAE-9FEF-FC7F6701D346_1_105_c.jpeg', '画像 4', false)">
                     <img src="img/memories/01_haneda_departure/825F9F7F-284F-4AAE-9FEF-FC7F6701D346_1_105_c.jpeg"
-                        alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
+                        alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/01_haneda_departure/9B8D51A2-4835-4DE7-A7C3-026A5CCFD08C_1_105_c.jpeg', '写真 5')">
+                    onclick="openModal('img/memories/01_haneda_departure/9B8D51A2-4835-4DE7-A7C3-026A5CCFD08C_1_105_c.jpeg', '画像 5', false)">
                     <img src="img/memories/01_haneda_departure/9B8D51A2-4835-4DE7-A7C3-026A5CCFD08C_1_105_c.jpeg"
-                        alt="写真 5">
-                    <div class="photo-caption">写真 5</div>
-                </div>
-                <div class="photo-card" onclick="openModal('img/memories/01_haneda_departure/title.png', 'タイトル画像')">
-                    <img src="img/memories/01_haneda_departure/title.png" alt="タイトル画像">
-                    <div class="photo-caption">タイトル画像</div>
+                        alt="画像 5">
+                    <div class="photo-caption">画像 5</div>
                 </div>
             </div>
         </div>
@@ -441,14 +439,22 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/02_ishigaki_arrival/05173645-C91A-42C2-A8A4-26BBB0B1E62F_1_105_c.jpeg', '写真 1')">
+                    onclick="openModal('img/memories/02_ishigaki_arrival/05173645-C91A-42C2-A8A4-26BBB0B1E62F_1_105_c.jpeg', '画像 1', false)">
                     <img src="img/memories/02_ishigaki_arrival/05173645-C91A-42C2-A8A4-26BBB0B1E62F_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                        alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
-                <div class="photo-card" onclick="openModal('img/memories/02_ishigaki_arrival/title.png', 'タイトル画像')">
-                    <img src="img/memories/02_ishigaki_arrival/title.png" alt="タイトル画像">
-                    <div class="photo-caption">タイトル画像</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/02_ishigaki_arrival/7B22BD08-D55B-424C-B84E-F107C49306BB_1_105_c.jpeg', '画像 2', false)">
+                    <img src="img/memories/02_ishigaki_arrival/7B22BD08-D55B-424C-B84E-F107C49306BB_1_105_c.jpeg"
+                        alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/02_ishigaki_arrival/E21043F7-0D6E-46F0-9FCA-A476565DD2DD_1_105_c.jpeg', '画像 3', false)">
+                    <img src="img/memories/02_ishigaki_arrival/E21043F7-0D6E-46F0-9FCA-A476565DD2DD_1_105_c.jpeg"
+                        alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
             </div>
         </div>
@@ -464,18 +470,13 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/03_mirumiru/2F09C546-86CC-4DAF-8343-11964D0A0E46_1_105_c.jpeg', '写真 1')">
-                    <img src="img/memories/03_mirumiru/2F09C546-86CC-4DAF-8343-11964D0A0E46_1_105_c.jpeg" alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                    onclick="openModal('img/memories/03_mirumiru/2F09C546-86CC-4DAF-8343-11964D0A0E46_1_105_c.jpeg', '画像 1', false)">
+                    <img src="img/memories/03_mirumiru/2F09C546-86CC-4DAF-8343-11964D0A0E46_1_105_c.jpeg" alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/03_mirumiru/E09CA6A5-C559-4741-9FFD-B2FC6AC45799_1_105_c.jpeg', '写真 2')">
-                    <img src="img/memories/03_mirumiru/E09CA6A5-C559-4741-9FFD-B2FC6AC45799_1_105_c.jpeg" alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
-                </div>
-                <div class="photo-card" onclick="openModal('img/memories/03_mirumiru/title.png', 'タイトル画像')">
-                    <img src="img/memories/03_mirumiru/title.png" alt="タイトル画像">
-                    <div class="photo-caption">タイトル画像</div>
+                <div class="photo-card" onclick="openModal('img/memories/03_mirumiru/IMG_5080.jpeg', '画像 2', false)">
+                    <img src="img/memories/03_mirumiru/IMG_5080.jpeg" alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
             </div>
         </div>
@@ -490,13 +491,45 @@
                 ホテルにチェックイン！フサキビーチでのんびり。
             </p>
             <div class="photo-grid">
-                <div class="photo-card" onclick="openModal('img/memories/04_fusaki_relax/fusaki_sunset.png', 'フサキビーチ')">
-                    <img src="img/memories/04_fusaki_relax/fusaki_sunset.png" alt="フサキビーチ">
-                    <div class="photo-caption">フサキビーチ</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5081.jpeg', '画像 1', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5081.jpeg" alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
-                <div class="photo-card" onclick="openModal('img/memories/04_fusaki_relax/title.png', 'タイトル画像')">
-                    <img src="img/memories/04_fusaki_relax/title.png" alt="タイトル画像">
-                    <div class="photo-caption">タイトル画像</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5083.jpeg', '画像 2', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5083.jpeg" alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5085.jpeg', '画像 3', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5085.jpeg" alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5086.jpeg', '画像 4', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5086.jpeg" alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
+                </div>
+                <div class="photo-card" onclick="openModal('img/memories/04_fusaki_relax/IMG_5090.MOV', '動画 5', true)">
+                    <video src="img/memories/04_fusaki_relax/IMG_5090.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 5（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5091.jpeg', '画像 6', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5091.jpeg" alt="画像 6">
+                    <div class="photo-caption">画像 6</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5092.jpeg', '画像 7', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5092.jpeg" alt="画像 7">
+                    <div class="photo-caption">画像 7</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/04_fusaki_relax/IMG_5093.jpeg', '画像 8', false)">
+                    <img src="img/memories/04_fusaki_relax/IMG_5093.jpeg" alt="画像 8">
+                    <div class="photo-caption">画像 8</div>
                 </div>
             </div>
         </div>
@@ -512,39 +545,34 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/05_dinner_shintenchi/0FDFFBA1-C1A4-413A-8471-BCEECEE46B5E_1_105_c.jpeg', '写真 1')">
+                    onclick="openModal('img/memories/05_dinner_shintenchi/0FDFFBA1-C1A4-413A-8471-BCEECEE46B5E_1_105_c.jpeg', '画像 1', false)">
                     <img src="img/memories/05_dinner_shintenchi/0FDFFBA1-C1A4-413A-8471-BCEECEE46B5E_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                        alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/05_dinner_shintenchi/1B76805D-D676-40DE-934B-73C342CB8995_1_105_c.jpeg', '写真 2')">
+                    onclick="openModal('img/memories/05_dinner_shintenchi/1B76805D-D676-40DE-934B-73C342CB8995_1_105_c.jpeg', '画像 2', false)">
                     <img src="img/memories/05_dinner_shintenchi/1B76805D-D676-40DE-934B-73C342CB8995_1_105_c.jpeg"
-                        alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                        alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/05_dinner_shintenchi/3A8676E6-CD91-47EF-9357-D2D6F2402314_1_105_c.jpeg', '写真 3')">
+                    onclick="openModal('img/memories/05_dinner_shintenchi/3A8676E6-CD91-47EF-9357-D2D6F2402314_1_105_c.jpeg', '画像 3', false)">
                     <img src="img/memories/05_dinner_shintenchi/3A8676E6-CD91-47EF-9357-D2D6F2402314_1_105_c.jpeg"
-                        alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
+                        alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/05_dinner_shintenchi/A6AFE869-3BCC-4D0B-B7EB-545F894585C1_1_105_c.jpeg', '写真 4')">
+                    onclick="openModal('img/memories/05_dinner_shintenchi/A6AFE869-3BCC-4D0B-B7EB-545F894585C1_1_105_c.jpeg', '画像 4', false)">
                     <img src="img/memories/05_dinner_shintenchi/A6AFE869-3BCC-4D0B-B7EB-545F894585C1_1_105_c.jpeg"
-                        alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
+                        alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/05_dinner_shintenchi/AC361375-D709-4CC8-8AE8-C680D6CFB476_1_105_c.jpeg', '写真 5')">
+                    onclick="openModal('img/memories/05_dinner_shintenchi/AC361375-D709-4CC8-8AE8-C680D6CFB476_1_105_c.jpeg', '画像 5', false)">
                     <img src="img/memories/05_dinner_shintenchi/AC361375-D709-4CC8-8AE8-C680D6CFB476_1_105_c.jpeg"
-                        alt="写真 5">
-                    <div class="photo-caption">写真 5</div>
-                </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/05_dinner_shintenchi/ishigaki_dinner.png', '美味しいディナー')">
-                    <img src="img/memories/05_dinner_shintenchi/ishigaki_dinner.png" alt="美味しいディナー">
-                    <div class="photo-caption">美味しいディナー</div>
+                        alt="画像 5">
+                    <div class="photo-caption">画像 5</div>
                 </div>
             </div>
         </div>
@@ -560,170 +588,167 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/0571DFA4-CA9D-473A-B1AF-D253B4D7D943_1_105_c.jpeg', '写真 1')">
+                    onclick="openModal('img/memories/06_day2_diving_father/0571DFA4-CA9D-473A-B1AF-D253B4D7D943_1_105_c.jpeg', '画像 1', false)">
                     <img src="img/memories/06_day2_diving_father/0571DFA4-CA9D-473A-B1AF-D253B4D7D943_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                        alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/1320965E-C21C-45B3-9F29-7DA2DE11973D_1_105_c.jpeg', '写真 2')">
+                    onclick="openModal('img/memories/06_day2_diving_father/1320965E-C21C-45B3-9F29-7DA2DE11973D_1_105_c.jpeg', '画像 2', false)">
                     <img src="img/memories/06_day2_diving_father/1320965E-C21C-45B3-9F29-7DA2DE11973D_1_105_c.jpeg"
-                        alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                        alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/249741BC-FF5A-438E-9A65-D73316474AFA_1_105_c.jpeg', '写真 3')">
+                    onclick="openModal('img/memories/06_day2_diving_father/249741BC-FF5A-438E-9A65-D73316474AFA_1_105_c.jpeg', '画像 3', false)">
                     <img src="img/memories/06_day2_diving_father/249741BC-FF5A-438E-9A65-D73316474AFA_1_105_c.jpeg"
-                        alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
+                        alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/2C8A2C6C-82C4-471A-BC50-D7AD8A52425B_1_105_c.jpeg', '写真 4')">
+                    onclick="openModal('img/memories/06_day2_diving_father/2C8A2C6C-82C4-471A-BC50-D7AD8A52425B_1_105_c.jpeg', '画像 4', false)">
                     <img src="img/memories/06_day2_diving_father/2C8A2C6C-82C4-471A-BC50-D7AD8A52425B_1_105_c.jpeg"
-                        alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
+                        alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/30472E8A-9D38-4F00-AF75-8A536B4EB0A0_1_105_c.jpeg', '写真 5')">
+                    onclick="openModal('img/memories/06_day2_diving_father/30472E8A-9D38-4F00-AF75-8A536B4EB0A0_1_105_c.jpeg', '画像 5', false)">
                     <img src="img/memories/06_day2_diving_father/30472E8A-9D38-4F00-AF75-8A536B4EB0A0_1_105_c.jpeg"
-                        alt="写真 5">
-                    <div class="photo-caption">写真 5</div>
+                        alt="画像 5">
+                    <div class="photo-caption">画像 5</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/36F43851-FF80-412F-81DB-2FB99A80CED8_1_105_c.jpeg', '写真 6')">
+                    onclick="openModal('img/memories/06_day2_diving_father/36F43851-FF80-412F-81DB-2FB99A80CED8_1_105_c.jpeg', '画像 6', false)">
                     <img src="img/memories/06_day2_diving_father/36F43851-FF80-412F-81DB-2FB99A80CED8_1_105_c.jpeg"
-                        alt="写真 6">
-                    <div class="photo-caption">写真 6</div>
+                        alt="画像 6">
+                    <div class="photo-caption">画像 6</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/3E671F34-1285-4E91-A6CB-837021D17E4C_1_105_c.jpeg', '写真 7')">
+                    onclick="openModal('img/memories/06_day2_diving_father/3E671F34-1285-4E91-A6CB-837021D17E4C_1_105_c.jpeg', '画像 7', false)">
                     <img src="img/memories/06_day2_diving_father/3E671F34-1285-4E91-A6CB-837021D17E4C_1_105_c.jpeg"
-                        alt="写真 7">
-                    <div class="photo-caption">写真 7</div>
+                        alt="画像 7">
+                    <div class="photo-caption">画像 7</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/495CB2BF-C78C-4A56-B80A-59CC33997EE5_1_105_c.jpeg', '写真 8')">
+                    onclick="openModal('img/memories/06_day2_diving_father/495CB2BF-C78C-4A56-B80A-59CC33997EE5_1_105_c.jpeg', '画像 8', false)">
                     <img src="img/memories/06_day2_diving_father/495CB2BF-C78C-4A56-B80A-59CC33997EE5_1_105_c.jpeg"
-                        alt="写真 8">
-                    <div class="photo-caption">写真 8</div>
+                        alt="画像 8">
+                    <div class="photo-caption">画像 8</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/49AEF332-773F-4A1D-BB98-91946936E4D9_1_105_c.jpeg', '写真 9')">
+                    onclick="openModal('img/memories/06_day2_diving_father/49AEF332-773F-4A1D-BB98-91946936E4D9_1_105_c.jpeg', '画像 9', false)">
                     <img src="img/memories/06_day2_diving_father/49AEF332-773F-4A1D-BB98-91946936E4D9_1_105_c.jpeg"
-                        alt="写真 9">
-                    <div class="photo-caption">写真 9</div>
+                        alt="画像 9">
+                    <div class="photo-caption">画像 9</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/4C652054-E306-4F2C-9397-0889954515EF_1_105_c.jpeg', '写真 10')">
+                    onclick="openModal('img/memories/06_day2_diving_father/4C652054-E306-4F2C-9397-0889954515EF_1_105_c.jpeg', '画像 10', false)">
                     <img src="img/memories/06_day2_diving_father/4C652054-E306-4F2C-9397-0889954515EF_1_105_c.jpeg"
-                        alt="写真 10">
-                    <div class="photo-caption">写真 10</div>
+                        alt="画像 10">
+                    <div class="photo-caption">画像 10</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_1_102_o 2.jpeg', '写真 11')">
-                    <img src="img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_1_102_o 2.jpeg"
-                        alt="写真 11">
-                    <div class="photo-caption">写真 11</div>
+                    onclick="openModal('img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_1_105_c.jpeg', '画像 11', false)">
+                    <img src="img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_1_105_c.jpeg"
+                        alt="画像 11">
+                    <div class="photo-caption">画像 11</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_1_102_o.jpeg', '写真 12')">
-                    <img src="img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_1_102_o.jpeg"
-                        alt="写真 12">
-                    <div class="photo-caption">写真 12</div>
-                </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_4_5005_c.jpeg', '写真 13')">
+                    onclick="openModal('img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_4_5005_c.jpeg', '画像 12', false)">
                     <img src="img/memories/06_day2_diving_father/54A3CF18-01A9-4C20-A687-29BF5F5B597D_4_5005_c.jpeg"
-                        alt="写真 13">
-                    <div class="photo-caption">写真 13</div>
+                        alt="画像 12">
+                    <div class="photo-caption">画像 12</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/6D09F8E4-98A8-4C41-A92C-DF987DCBBB12_1_105_c.jpeg', '写真 14')">
+                    onclick="openModal('img/memories/06_day2_diving_father/6D09F8E4-98A8-4C41-A92C-DF987DCBBB12_1_105_c.jpeg', '画像 13', false)">
                     <img src="img/memories/06_day2_diving_father/6D09F8E4-98A8-4C41-A92C-DF987DCBBB12_1_105_c.jpeg"
-                        alt="写真 14">
-                    <div class="photo-caption">写真 14</div>
+                        alt="画像 13">
+                    <div class="photo-caption">画像 13</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/6E912808-12B3-4997-9297-0AD752CE601F_1_105_c.jpeg', '写真 15')">
+                    onclick="openModal('img/memories/06_day2_diving_father/6E912808-12B3-4997-9297-0AD752CE601F_1_105_c.jpeg', '画像 14', false)">
                     <img src="img/memories/06_day2_diving_father/6E912808-12B3-4997-9297-0AD752CE601F_1_105_c.jpeg"
-                        alt="写真 15">
-                    <div class="photo-caption">写真 15</div>
+                        alt="画像 14">
+                    <div class="photo-caption">画像 14</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/741FDF8F-EC5B-490D-81EC-FD41FD6F074D_1_105_c.jpeg', '写真 16')">
+                    onclick="openModal('img/memories/06_day2_diving_father/741FDF8F-EC5B-490D-81EC-FD41FD6F074D_1_105_c.jpeg', '画像 15', false)">
                     <img src="img/memories/06_day2_diving_father/741FDF8F-EC5B-490D-81EC-FD41FD6F074D_1_105_c.jpeg"
-                        alt="写真 16">
-                    <div class="photo-caption">写真 16</div>
+                        alt="画像 15">
+                    <div class="photo-caption">画像 15</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/75C4B081-FB9C-40D6-8925-D312B39A8393_1_105_c.jpeg', '写真 17')">
+                    onclick="openModal('img/memories/06_day2_diving_father/75C4B081-FB9C-40D6-8925-D312B39A8393_1_105_c.jpeg', '画像 16', false)">
                     <img src="img/memories/06_day2_diving_father/75C4B081-FB9C-40D6-8925-D312B39A8393_1_105_c.jpeg"
-                        alt="写真 17">
-                    <div class="photo-caption">写真 17</div>
+                        alt="画像 16">
+                    <div class="photo-caption">画像 16</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/77D07697-29D9-48E5-A95C-4C76D7E3DE03_1_105_c.jpeg', '写真 18')">
+                    onclick="openModal('img/memories/06_day2_diving_father/77D07697-29D9-48E5-A95C-4C76D7E3DE03_1_105_c.jpeg', '画像 17', false)">
                     <img src="img/memories/06_day2_diving_father/77D07697-29D9-48E5-A95C-4C76D7E3DE03_1_105_c.jpeg"
-                        alt="写真 18">
-                    <div class="photo-caption">写真 18</div>
+                        alt="画像 17">
+                    <div class="photo-caption">画像 17</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/7FDE9548-4176-4083-8C4B-CF5B2C407C52_1_105_c.jpeg', '写真 19')">
+                    onclick="openModal('img/memories/06_day2_diving_father/7FDE9548-4176-4083-8C4B-CF5B2C407C52_1_105_c.jpeg', '画像 18', false)">
                     <img src="img/memories/06_day2_diving_father/7FDE9548-4176-4083-8C4B-CF5B2C407C52_1_105_c.jpeg"
-                        alt="写真 19">
-                    <div class="photo-caption">写真 19</div>
+                        alt="画像 18">
+                    <div class="photo-caption">画像 18</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/A6C8CA2B-6104-4D53-8823-57F00A09F638_1_105_c.jpeg', '写真 20')">
+                    onclick="openModal('img/memories/06_day2_diving_father/A6C8CA2B-6104-4D53-8823-57F00A09F638_1_105_c.jpeg', '画像 19', false)">
                     <img src="img/memories/06_day2_diving_father/A6C8CA2B-6104-4D53-8823-57F00A09F638_1_105_c.jpeg"
-                        alt="写真 20">
-                    <div class="photo-caption">写真 20</div>
+                        alt="画像 19">
+                    <div class="photo-caption">画像 19</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/B0F130D9-3748-450E-B4AB-0CBFAA5B19AE_1_105_c.jpeg', '写真 21')">
+                    onclick="openModal('img/memories/06_day2_diving_father/B0F130D9-3748-450E-B4AB-0CBFAA5B19AE_1_105_c.jpeg', '画像 20', false)">
                     <img src="img/memories/06_day2_diving_father/B0F130D9-3748-450E-B4AB-0CBFAA5B19AE_1_105_c.jpeg"
-                        alt="写真 21">
-                    <div class="photo-caption">写真 21</div>
+                        alt="画像 20">
+                    <div class="photo-caption">画像 20</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/BE7C2737-44DA-4361-A7E4-047C686F1EFE_1_105_c.jpeg', '写真 22')">
+                    onclick="openModal('img/memories/06_day2_diving_father/BE7C2737-44DA-4361-A7E4-047C686F1EFE_1_105_c.jpeg', '画像 21', false)">
                     <img src="img/memories/06_day2_diving_father/BE7C2737-44DA-4361-A7E4-047C686F1EFE_1_105_c.jpeg"
-                        alt="写真 22">
-                    <div class="photo-caption">写真 22</div>
+                        alt="画像 21">
+                    <div class="photo-caption">画像 21</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/C33F4162-53C6-4518-A296-A83CA2394606_1_105_c.jpeg', '写真 23')">
+                    onclick="openModal('img/memories/06_day2_diving_father/C33F4162-53C6-4518-A296-A83CA2394606_1_105_c.jpeg', '画像 22', false)">
                     <img src="img/memories/06_day2_diving_father/C33F4162-53C6-4518-A296-A83CA2394606_1_105_c.jpeg"
-                        alt="写真 23">
-                    <div class="photo-caption">写真 23</div>
+                        alt="画像 22">
+                    <div class="photo-caption">画像 22</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/CD871E09-57B9-4356-869D-53B7C40654C2_1_105_c.jpeg', '写真 24')">
+                    onclick="openModal('img/memories/06_day2_diving_father/CD871E09-57B9-4356-869D-53B7C40654C2_1_105_c.jpeg', '画像 23', false)">
                     <img src="img/memories/06_day2_diving_father/CD871E09-57B9-4356-869D-53B7C40654C2_1_105_c.jpeg"
-                        alt="写真 24">
-                    <div class="photo-caption">写真 24</div>
+                        alt="画像 23">
+                    <div class="photo-caption">画像 23</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/E5054369-F4FA-4CC0-AF2D-1654183F72E7_1_105_c.jpeg', '写真 25')">
+                    onclick="openModal('img/memories/06_day2_diving_father/E5054369-F4FA-4CC0-AF2D-1654183F72E7_1_105_c.jpeg', '画像 24', false)">
                     <img src="img/memories/06_day2_diving_father/E5054369-F4FA-4CC0-AF2D-1654183F72E7_1_105_c.jpeg"
-                        alt="写真 25">
-                    <div class="photo-caption">写真 25</div>
+                        alt="画像 24">
+                    <div class="photo-caption">画像 24</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/E5C1F709-775B-4561-89FA-EA11DAB9B64E_1_105_c.jpeg', '写真 26')">
+                    onclick="openModal('img/memories/06_day2_diving_father/E5C1F709-775B-4561-89FA-EA11DAB9B64E_1_105_c.jpeg', '画像 25', false)">
                     <img src="img/memories/06_day2_diving_father/E5C1F709-775B-4561-89FA-EA11DAB9B64E_1_105_c.jpeg"
-                        alt="写真 26">
-                    <div class="photo-caption">写真 26</div>
+                        alt="画像 25">
+                    <div class="photo-caption">画像 25</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/06_day2_diving_father/F19561FE-9F77-4DAE-BF0D-2CF1B8AB6F81_1_105_c.jpeg', '写真 27')">
+                    onclick="openModal('img/memories/06_day2_diving_father/F19561FE-9F77-4DAE-BF0D-2CF1B8AB6F81_1_105_c.jpeg', '画像 26', false)">
                     <img src="img/memories/06_day2_diving_father/F19561FE-9F77-4DAE-BF0D-2CF1B8AB6F81_1_105_c.jpeg"
-                        alt="写真 27">
-                    <div class="photo-caption">写真 27</div>
+                        alt="画像 26">
+                    <div class="photo-caption">画像 26</div>
                 </div>
-                <div class="photo-card" onclick="openModal('img/memories/06_day2_diving_father/diving.png', 'ダイビング！')">
-                    <img src="img/memories/06_day2_diving_father/diving.png" alt="ダイビング！">
-                    <div class="photo-caption">ダイビング！</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/06_day2_diving_father/dji_export_20260221_140557_1771650357841_compose_0.mov', '動画 27', true)">
+                    <video
+                        src="img/memories/06_day2_diving_father/dji_export_20260221_140557_1771650357841_compose_0.mov"
+                        muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 27（動画）</div>
                 </div>
             </div>
         </div>
@@ -738,32 +763,164 @@
                 ママと娘はのんびりフェリーで竹富島へ。水牛車の揺れと三線の音が心地よい一日。
             </p>
             <div class="photo-grid">
-                <div class="photo-card" onclick="openModal('img/memories/07_taketomi_buffalo/taketomi.png', '竹富島の風景')">
-                    <img src="img/memories/07_taketomi_buffalo/taketomi.png" alt="竹富島の風景">
-                    <div class="photo-caption">竹富島の風景</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5094.jpeg', '画像 1', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5094.jpeg" alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/07_taketomi_buffalo/taketomi_relax.png', '竹富島の風景')">
-                    <img src="img/memories/07_taketomi_buffalo/taketomi_relax.png" alt="竹富島の風景">
-                    <div class="photo-caption">竹富島の風景</div>
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5095.jpeg', '画像 2', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5095.jpeg" alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
-            </div>
-        </div>
-
-        <!-- 08_dinner_teppen -->
-        <div class="day-panel">
-            <div class="day-header">
-                <h2 class="day-title">「てっぺん」で石垣牛！</h2>
-                <span class="day-date">Day 2 夜</span>
-            </div>
-            <p class="day-desc">
-                ダイビングから帰ってきたパパと合流し、みんな揃って石垣牛！🐂
-            </p>
-            <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/08_dinner_teppen/ishigaki_dinner.png', '美味しいディナー')">
-                    <img src="img/memories/08_dinner_teppen/ishigaki_dinner.png" alt="美味しいディナー">
-                    <div class="photo-caption">美味しいディナー</div>
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5096.jpeg', '画像 3', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5096.jpeg" alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5097.jpeg', '画像 4', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5097.jpeg" alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5100.MOV', '動画 5', true)">
+                    <video src="img/memories/07_taketomi_buffalo/IMG_5100.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 5（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5101.jpeg', '画像 6', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5101.jpeg" alt="画像 6">
+                    <div class="photo-caption">画像 6</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5103.jpeg', '画像 7', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5103.jpeg" alt="画像 7">
+                    <div class="photo-caption">画像 7</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5109.jpeg', '画像 8', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5109.jpeg" alt="画像 8">
+                    <div class="photo-caption">画像 8</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5110.jpeg', '画像 9', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5110.jpeg" alt="画像 9">
+                    <div class="photo-caption">画像 9</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5113.jpeg', '画像 10', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5113.jpeg" alt="画像 10">
+                    <div class="photo-caption">画像 10</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5114.jpeg', '画像 11', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5114.jpeg" alt="画像 11">
+                    <div class="photo-caption">画像 11</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5116.jpeg', '画像 12', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5116.jpeg" alt="画像 12">
+                    <div class="photo-caption">画像 12</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5117.jpeg', '画像 13', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5117.jpeg" alt="画像 13">
+                    <div class="photo-caption">画像 13</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5121.jpeg', '画像 14', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5121.jpeg" alt="画像 14">
+                    <div class="photo-caption">画像 14</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5122.jpeg', '画像 15', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5122.jpeg" alt="画像 15">
+                    <div class="photo-caption">画像 15</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5127.jpeg', '画像 16', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5127.jpeg" alt="画像 16">
+                    <div class="photo-caption">画像 16</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5128.jpeg', '画像 17', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5128.jpeg" alt="画像 17">
+                    <div class="photo-caption">画像 17</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5130.MOV', '動画 18', true)">
+                    <video src="img/memories/07_taketomi_buffalo/IMG_5130.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 18（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5131.jpeg', '画像 19', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5131.jpeg" alt="画像 19">
+                    <div class="photo-caption">画像 19</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5134.jpeg', '画像 20', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5134.jpeg" alt="画像 20">
+                    <div class="photo-caption">画像 20</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5135.MOV', '動画 21', true)">
+                    <video src="img/memories/07_taketomi_buffalo/IMG_5135.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 21（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5136.jpeg', '画像 22', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5136.jpeg" alt="画像 22">
+                    <div class="photo-caption">画像 22</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5137.jpeg', '画像 23', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5137.jpeg" alt="画像 23">
+                    <div class="photo-caption">画像 23</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5138.jpeg', '画像 24', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5138.jpeg" alt="画像 24">
+                    <div class="photo-caption">画像 24</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5140.jpeg', '画像 25', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5140.jpeg" alt="画像 25">
+                    <div class="photo-caption">画像 25</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5145.jpeg', '画像 26', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5145.jpeg" alt="画像 26">
+                    <div class="photo-caption">画像 26</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5147.jpeg', '画像 27', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5147.jpeg" alt="画像 27">
+                    <div class="photo-caption">画像 27</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5148.jpeg', '画像 28', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5148.jpeg" alt="画像 28">
+                    <div class="photo-caption">画像 28</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5152.jpeg', '画像 29', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5152.jpeg" alt="画像 29">
+                    <div class="photo-caption">画像 29</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5153.MOV', '動画 30', true)">
+                    <video src="img/memories/07_taketomi_buffalo/IMG_5153.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 30（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/07_taketomi_buffalo/IMG_5197.JPG', '画像 31', false)">
+                    <img src="img/memories/07_taketomi_buffalo/IMG_5197.JPG" alt="画像 31">
+                    <div class="photo-caption">画像 31</div>
                 </div>
             </div>
         </div>
@@ -779,55 +936,73 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/09_day3_diving_family/4D824DF3-E3AC-4366-9EBD-BDE05387B0B7_1_105_c.jpeg', '写真 1')">
+                    onclick="openModal('img/memories/09_day3_diving_family/4D824DF3-E3AC-4366-9EBD-BDE05387B0B7_1_105_c.jpeg', '画像 1', false)">
                     <img src="img/memories/09_day3_diving_family/4D824DF3-E3AC-4366-9EBD-BDE05387B0B7_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                        alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/09_day3_diving_family/4EA18181-CBA1-4155-AFEB-798868A26EE2_1_102_o.jpeg', '写真 2')">
+                    onclick="openModal('img/memories/09_day3_diving_family/4EA18181-CBA1-4155-AFEB-798868A26EE2_1_102_o.jpeg', '画像 2', false)">
                     <img src="img/memories/09_day3_diving_family/4EA18181-CBA1-4155-AFEB-798868A26EE2_1_102_o.jpeg"
-                        alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                        alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/09_day3_diving_family/63382A55-0CA6-4D7E-82C5-8552D4366ED2_1_105_c.jpeg', '写真 3')">
+                    onclick="openModal('img/memories/09_day3_diving_family/63382A55-0CA6-4D7E-82C5-8552D4366ED2_1_105_c.jpeg', '画像 3', false)">
                     <img src="img/memories/09_day3_diving_family/63382A55-0CA6-4D7E-82C5-8552D4366ED2_1_105_c.jpeg"
-                        alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
+                        alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/09_day3_diving_family/BD3EECD9-7157-4E7D-BB9F-4E9A18BE1F9C_4_5005_c.jpeg', '写真 4')">
+                    onclick="openModal('img/memories/09_day3_diving_family/BD3EECD9-7157-4E7D-BB9F-4E9A18BE1F9C_4_5005_c.jpeg', '画像 4', false)">
                     <img src="img/memories/09_day3_diving_family/BD3EECD9-7157-4E7D-BB9F-4E9A18BE1F9C_4_5005_c.jpeg"
-                        alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
+                        alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/09_day3_diving_family/EE298F5E-F327-4281-B7F7-A35CB930ECA1_1_105_c.jpeg', '写真 5')">
+                    onclick="openModal('img/memories/09_day3_diving_family/EE298F5E-F327-4281-B7F7-A35CB930ECA1_1_105_c.jpeg', '画像 5', false)">
                     <img src="img/memories/09_day3_diving_family/EE298F5E-F327-4281-B7F7-A35CB930ECA1_1_105_c.jpeg"
-                        alt="写真 5">
-                    <div class="photo-caption">写真 5</div>
+                        alt="画像 5">
+                    <div class="photo-caption">画像 5</div>
                 </div>
-                <div class="photo-card" onclick="openModal('img/memories/09_day3_diving_family/diving.png', 'ダイビング！')">
-                    <img src="img/memories/09_day3_diving_family/diving.png" alt="ダイビング！">
-                    <div class="photo-caption">ダイビング！</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/IMG_5156.jpeg', '画像 6', false)">
+                    <img src="img/memories/09_day3_diving_family/IMG_5156.jpeg" alt="画像 6">
+                    <div class="photo-caption">画像 6</div>
                 </div>
-            </div>
-        </div>
-
-        <!-- 10_fusaki_relax_day3 -->
-        <div class="day-panel">
-            <div class="day-header">
-                <h2 class="day-title">フサキリゾートで休憩</h2>
-                <span class="day-date">Day 3 午後</span>
-            </div>
-            <p class="day-desc">
-                ダイビングの後は、ホテルに戻ってリゾート気分でゆったりと休憩。
-            </p>
-            <div class="photo-grid">
-                <div class="photo-card" onclick="openModal('img/memories/10_fusaki_relax_day3/kabira.png', '川平湾')">
-                    <img src="img/memories/10_fusaki_relax_day3/kabira.png" alt="川平湾">
-                    <div class="photo-caption">川平湾</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/IMG_5157.jpeg', '画像 7', false)">
+                    <img src="img/memories/09_day3_diving_family/IMG_5157.jpeg" alt="画像 7">
+                    <div class="photo-caption">画像 7</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/IMG_5159.jpeg', '画像 8', false)">
+                    <img src="img/memories/09_day3_diving_family/IMG_5159.jpeg" alt="画像 8">
+                    <div class="photo-caption">画像 8</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/IMG_5160.MOV', '動画 9', true)">
+                    <video src="img/memories/09_day3_diving_family/IMG_5160.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 9（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/IMG_5161.jpeg', '画像 10', false)">
+                    <img src="img/memories/09_day3_diving_family/IMG_5161.jpeg" alt="画像 10">
+                    <div class="photo-caption">画像 10</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/P2210274.MOV', '動画 11', true)">
+                    <video src="img/memories/09_day3_diving_family/P2210274.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 11（動画）</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/09_day3_diving_family/dji_export_20260222_125348_1771732428256_compose_0.mov', '動画 12', true)">
+                    <video
+                        src="img/memories/09_day3_diving_family/dji_export_20260222_125348_1771732428256_compose_0.mov"
+                        muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 12（動画）</div>
                 </div>
             </div>
         </div>
@@ -843,39 +1018,39 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/11_dinner_tingara/D1D3A0E6-31C4-40FA-8BAC-F206240499EA_1_105_c.jpeg', '写真 1')">
-                    <img src="img/memories/11_dinner_tingara/D1D3A0E6-31C4-40FA-8BAC-F206240499EA_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_0502.JPG', '画像 1', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_0502.JPG" alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/11_dinner_tingara/D39C5929-0526-4B96-A574-D3FF0512B3DB_1_105_c.jpeg', '写真 2')">
-                    <img src="img/memories/11_dinner_tingara/D39C5929-0526-4B96-A574-D3FF0512B3DB_1_105_c.jpeg"
-                        alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_0503.JPG', '画像 2', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_0503.JPG" alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/11_dinner_tingara/E1CFAD93-0B72-45FC-B8E2-7828EC3E997C_1_105_c.jpeg', '写真 3')">
-                    <img src="img/memories/11_dinner_tingara/E1CFAD93-0B72-45FC-B8E2-7828EC3E997C_1_105_c.jpeg"
-                        alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_0504.JPG', '画像 3', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_0504.JPG" alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/11_dinner_tingara/F6CFF42C-3D7F-4B65-86B5-0DEE53C917A9_1_105_c.jpeg', '写真 4')">
-                    <img src="img/memories/11_dinner_tingara/F6CFF42C-3D7F-4B65-86B5-0DEE53C917A9_1_105_c.jpeg"
-                        alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_0505.JPG', '画像 4', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_0505.JPG" alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/11_dinner_tingara/FA870E16-F4EF-4D18-B9E1-B1A9D4FFF5DF_1_105_c.jpeg', '写真 5')">
-                    <img src="img/memories/11_dinner_tingara/FA870E16-F4EF-4D18-B9E1-B1A9D4FFF5DF_1_105_c.jpeg"
-                        alt="写真 5">
-                    <div class="photo-caption">写真 5</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_0506.JPG', '画像 5', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_0506.JPG" alt="画像 5">
+                    <div class="photo-caption">画像 5</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/11_dinner_tingara/ishigaki_dinner.png', '美味しいディナー')">
-                    <img src="img/memories/11_dinner_tingara/ishigaki_dinner.png" alt="美味しいディナー">
-                    <div class="photo-caption">美味しいディナー</div>
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_5167.jpeg', '画像 6', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_5167.jpeg" alt="画像 6">
+                    <div class="photo-caption">画像 6</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/11_dinner_tingara/IMG_5171.jpeg', '画像 7', false)">
+                    <img src="img/memories/11_dinner_tingara/IMG_5171.jpeg" alt="画像 7">
+                    <div class="photo-caption">画像 7</div>
                 </div>
             </div>
         </div>
@@ -891,852 +1066,884 @@
             </p>
             <div class="photo-grid">
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/127A345A-6664-4E05-B7B8-F34F51909110_1_105_c.jpeg', '写真 1')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/127A345A-6664-4E05-B7B8-F34F51909110_1_105_c.jpeg', '画像 1', false)">
                     <img src="img/memories/12_iriomote_adventure/127A345A-6664-4E05-B7B8-F34F51909110_1_105_c.jpeg"
-                        alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                        alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/13BFC81F-E2F9-42B5-A12A-3A67555E7CF8_1_105_c.jpeg', '写真 2')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/13BFC81F-E2F9-42B5-A12A-3A67555E7CF8_1_105_c.jpeg', '画像 2', false)">
                     <img src="img/memories/12_iriomote_adventure/13BFC81F-E2F9-42B5-A12A-3A67555E7CF8_1_105_c.jpeg"
-                        alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                        alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/42B99537-5207-4713-BFF7-AA7BC2F2F326_1_105_c.jpeg', '写真 3')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/42B99537-5207-4713-BFF7-AA7BC2F2F326_1_105_c.jpeg', '画像 3', false)">
                     <img src="img/memories/12_iriomote_adventure/42B99537-5207-4713-BFF7-AA7BC2F2F326_1_105_c.jpeg"
-                        alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
+                        alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/4E67FAD6-A6A9-4D34-BA4A-4DD2CC6CA34E_1_105_c.jpeg', '写真 4')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/4E67FAD6-A6A9-4D34-BA4A-4DD2CC6CA34E_1_105_c.jpeg', '画像 4', false)">
                     <img src="img/memories/12_iriomote_adventure/4E67FAD6-A6A9-4D34-BA4A-4DD2CC6CA34E_1_105_c.jpeg"
-                        alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
+                        alt="画像 4">
+                    <div class="photo-caption">画像 4</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/77ABED86-37CA-4CF5-9FF6-368F2D566E3C_1_105_c.jpeg', '写真 5')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/77ABED86-37CA-4CF5-9FF6-368F2D566E3C_1_105_c.jpeg', '画像 5', false)">
                     <img src="img/memories/12_iriomote_adventure/77ABED86-37CA-4CF5-9FF6-368F2D566E3C_1_105_c.jpeg"
-                        alt="写真 5">
-                    <div class="photo-caption">写真 5</div>
+                        alt="画像 5">
+                    <div class="photo-caption">画像 5</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/8BD08F3A-50D5-44EB-9A95-7CE7A4952716_1_105_c.jpeg', '写真 6')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/8BD08F3A-50D5-44EB-9A95-7CE7A4952716_1_105_c.jpeg', '画像 6', false)">
                     <img src="img/memories/12_iriomote_adventure/8BD08F3A-50D5-44EB-9A95-7CE7A4952716_1_105_c.jpeg"
-                        alt="写真 6">
-                    <div class="photo-caption">写真 6</div>
+                        alt="画像 6">
+                    <div class="photo-caption">画像 6</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/8CC6B621-1BFB-4B31-B8A6-56149C78373E_1_105_c.jpeg', '写真 7')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/8CC6B621-1BFB-4B31-B8A6-56149C78373E_1_105_c.jpeg', '画像 7', false)">
                     <img src="img/memories/12_iriomote_adventure/8CC6B621-1BFB-4B31-B8A6-56149C78373E_1_105_c.jpeg"
-                        alt="写真 7">
-                    <div class="photo-caption">写真 7</div>
+                        alt="画像 7">
+                    <div class="photo-caption">画像 7</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/A2DB2C98-F36F-4526-856D-8B067925E9EB_1_105_c.jpeg', '写真 8')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/A2DB2C98-F36F-4526-856D-8B067925E9EB_1_105_c.jpeg', '画像 8', false)">
                     <img src="img/memories/12_iriomote_adventure/A2DB2C98-F36F-4526-856D-8B067925E9EB_1_105_c.jpeg"
-                        alt="写真 8">
-                    <div class="photo-caption">写真 8</div>
+                        alt="画像 8">
+                    <div class="photo-caption">画像 8</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/B0B54B4C-1483-4C56-99E9-EFA5611E5BEF_1_105_c.jpeg', '写真 9')">
+                    onclick="openModal('img/memories/12_iriomote_adventure/B0B54B4C-1483-4C56-99E9-EFA5611E5BEF_1_105_c.jpeg', '画像 9', false)">
                     <img src="img/memories/12_iriomote_adventure/B0B54B4C-1483-4C56-99E9-EFA5611E5BEF_1_105_c.jpeg"
-                        alt="写真 9">
-                    <div class="photo-caption">写真 9</div>
+                        alt="画像 9">
+                    <div class="photo-caption">画像 9</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230656_R1.JPG', '写真 10')">
-                    <img src="img/memories/12_iriomote_adventure/P2230656_R1.JPG" alt="写真 10">
-                    <div class="photo-caption">写真 10</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5175.jpeg', '画像 10', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5175.jpeg" alt="画像 10">
+                    <div class="photo-caption">画像 10</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230657_R1.JPG', '写真 11')">
-                    <img src="img/memories/12_iriomote_adventure/P2230657_R1.JPG" alt="写真 11">
-                    <div class="photo-caption">写真 11</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5176.MOV', '動画 11', true)">
+                    <video src="img/memories/12_iriomote_adventure/IMG_5176.MOV" muted loop playsinline
+                        style="width:100%; height:100%; object-fit:cover;"></video>
+                    <div class="photo-caption">動画 11（動画）</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230658_R1.JPG', '写真 12')">
-                    <img src="img/memories/12_iriomote_adventure/P2230658_R1.JPG" alt="写真 12">
-                    <div class="photo-caption">写真 12</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5177.jpeg', '画像 12', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5177.jpeg" alt="画像 12">
+                    <div class="photo-caption">画像 12</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230659_R1.JPG', '写真 13')">
-                    <img src="img/memories/12_iriomote_adventure/P2230659_R1.JPG" alt="写真 13">
-                    <div class="photo-caption">写真 13</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5178.jpeg', '画像 13', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5178.jpeg" alt="画像 13">
+                    <div class="photo-caption">画像 13</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230660_R1.JPG', '写真 14')">
-                    <img src="img/memories/12_iriomote_adventure/P2230660_R1.JPG" alt="写真 14">
-                    <div class="photo-caption">写真 14</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5179.jpeg', '画像 14', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5179.jpeg" alt="画像 14">
+                    <div class="photo-caption">画像 14</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230664_R1.JPG', '写真 15')">
-                    <img src="img/memories/12_iriomote_adventure/P2230664_R1.JPG" alt="写真 15">
-                    <div class="photo-caption">写真 15</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5180.jpeg', '画像 15', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5180.jpeg" alt="画像 15">
+                    <div class="photo-caption">画像 15</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230667_R1.JPG', '写真 16')">
-                    <img src="img/memories/12_iriomote_adventure/P2230667_R1.JPG" alt="写真 16">
-                    <div class="photo-caption">写真 16</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5181.jpeg', '画像 16', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5181.jpeg" alt="画像 16">
+                    <div class="photo-caption">画像 16</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230670_R1.JPG', '写真 17')">
-                    <img src="img/memories/12_iriomote_adventure/P2230670_R1.JPG" alt="写真 17">
-                    <div class="photo-caption">写真 17</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/IMG_5182.jpeg', '画像 17', false)">
+                    <img src="img/memories/12_iriomote_adventure/IMG_5182.jpeg" alt="画像 17">
+                    <div class="photo-caption">画像 17</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230672_R1.JPG', '写真 18')">
-                    <img src="img/memories/12_iriomote_adventure/P2230672_R1.JPG" alt="写真 18">
-                    <div class="photo-caption">写真 18</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230656_R1.JPG', '画像 18', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230656_R1.JPG" alt="画像 18">
+                    <div class="photo-caption">画像 18</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230673_R1.JPG', '写真 19')">
-                    <img src="img/memories/12_iriomote_adventure/P2230673_R1.JPG" alt="写真 19">
-                    <div class="photo-caption">写真 19</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230657_R1.JPG', '画像 19', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230657_R1.JPG" alt="画像 19">
+                    <div class="photo-caption">画像 19</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230674_R1.JPG', '写真 20')">
-                    <img src="img/memories/12_iriomote_adventure/P2230674_R1.JPG" alt="写真 20">
-                    <div class="photo-caption">写真 20</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230658_R1.JPG', '画像 20', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230658_R1.JPG" alt="画像 20">
+                    <div class="photo-caption">画像 20</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230675_R1.JPG', '写真 21')">
-                    <img src="img/memories/12_iriomote_adventure/P2230675_R1.JPG" alt="写真 21">
-                    <div class="photo-caption">写真 21</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230659_R1.JPG', '画像 21', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230659_R1.JPG" alt="画像 21">
+                    <div class="photo-caption">画像 21</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230678_R1.JPG', '写真 22')">
-                    <img src="img/memories/12_iriomote_adventure/P2230678_R1.JPG" alt="写真 22">
-                    <div class="photo-caption">写真 22</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230660_R1.JPG', '画像 22', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230660_R1.JPG" alt="画像 22">
+                    <div class="photo-caption">画像 22</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230679_R1.JPG', '写真 23')">
-                    <img src="img/memories/12_iriomote_adventure/P2230679_R1.JPG" alt="写真 23">
-                    <div class="photo-caption">写真 23</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230664_R1.JPG', '画像 23', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230664_R1.JPG" alt="画像 23">
+                    <div class="photo-caption">画像 23</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230680_R1.JPG', '写真 24')">
-                    <img src="img/memories/12_iriomote_adventure/P2230680_R1.JPG" alt="写真 24">
-                    <div class="photo-caption">写真 24</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230667_R1.JPG', '画像 24', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230667_R1.JPG" alt="画像 24">
+                    <div class="photo-caption">画像 24</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230681_R1.JPG', '写真 25')">
-                    <img src="img/memories/12_iriomote_adventure/P2230681_R1.JPG" alt="写真 25">
-                    <div class="photo-caption">写真 25</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230670_R1.JPG', '画像 25', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230670_R1.JPG" alt="画像 25">
+                    <div class="photo-caption">画像 25</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230683_R1.JPG', '写真 26')">
-                    <img src="img/memories/12_iriomote_adventure/P2230683_R1.JPG" alt="写真 26">
-                    <div class="photo-caption">写真 26</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230672_R1.JPG', '画像 26', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230672_R1.JPG" alt="画像 26">
+                    <div class="photo-caption">画像 26</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230684_R1.JPG', '写真 27')">
-                    <img src="img/memories/12_iriomote_adventure/P2230684_R1.JPG" alt="写真 27">
-                    <div class="photo-caption">写真 27</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230673_R1.JPG', '画像 27', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230673_R1.JPG" alt="画像 27">
+                    <div class="photo-caption">画像 27</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230685_R1.JPG', '写真 28')">
-                    <img src="img/memories/12_iriomote_adventure/P2230685_R1.JPG" alt="写真 28">
-                    <div class="photo-caption">写真 28</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230674_R1.JPG', '画像 28', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230674_R1.JPG" alt="画像 28">
+                    <div class="photo-caption">画像 28</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230686_R1.JPG', '写真 29')">
-                    <img src="img/memories/12_iriomote_adventure/P2230686_R1.JPG" alt="写真 29">
-                    <div class="photo-caption">写真 29</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230675_R1.JPG', '画像 29', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230675_R1.JPG" alt="画像 29">
+                    <div class="photo-caption">画像 29</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230687_R1.JPG', '写真 30')">
-                    <img src="img/memories/12_iriomote_adventure/P2230687_R1.JPG" alt="写真 30">
-                    <div class="photo-caption">写真 30</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230678_R1.JPG', '画像 30', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230678_R1.JPG" alt="画像 30">
+                    <div class="photo-caption">画像 30</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230689_R1.JPG', '写真 31')">
-                    <img src="img/memories/12_iriomote_adventure/P2230689_R1.JPG" alt="写真 31">
-                    <div class="photo-caption">写真 31</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230679_R1.JPG', '画像 31', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230679_R1.JPG" alt="画像 31">
+                    <div class="photo-caption">画像 31</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230690_R1.JPG', '写真 32')">
-                    <img src="img/memories/12_iriomote_adventure/P2230690_R1.JPG" alt="写真 32">
-                    <div class="photo-caption">写真 32</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230680_R1.JPG', '画像 32', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230680_R1.JPG" alt="画像 32">
+                    <div class="photo-caption">画像 32</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230691_R1.JPG', '写真 33')">
-                    <img src="img/memories/12_iriomote_adventure/P2230691_R1.JPG" alt="写真 33">
-                    <div class="photo-caption">写真 33</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230681_R1.JPG', '画像 33', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230681_R1.JPG" alt="画像 33">
+                    <div class="photo-caption">画像 33</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230692_R1.JPG', '写真 34')">
-                    <img src="img/memories/12_iriomote_adventure/P2230692_R1.JPG" alt="写真 34">
-                    <div class="photo-caption">写真 34</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230683_R1.JPG', '画像 34', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230683_R1.JPG" alt="画像 34">
+                    <div class="photo-caption">画像 34</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230693_R1.JPG', '写真 35')">
-                    <img src="img/memories/12_iriomote_adventure/P2230693_R1.JPG" alt="写真 35">
-                    <div class="photo-caption">写真 35</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230684_R1.JPG', '画像 35', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230684_R1.JPG" alt="画像 35">
+                    <div class="photo-caption">画像 35</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230695_R1.JPG', '写真 36')">
-                    <img src="img/memories/12_iriomote_adventure/P2230695_R1.JPG" alt="写真 36">
-                    <div class="photo-caption">写真 36</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230685_R1.JPG', '画像 36', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230685_R1.JPG" alt="画像 36">
+                    <div class="photo-caption">画像 36</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230697_R1.JPG', '写真 37')">
-                    <img src="img/memories/12_iriomote_adventure/P2230697_R1.JPG" alt="写真 37">
-                    <div class="photo-caption">写真 37</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230686_R1.JPG', '画像 37', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230686_R1.JPG" alt="画像 37">
+                    <div class="photo-caption">画像 37</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230698_R1.JPG', '写真 38')">
-                    <img src="img/memories/12_iriomote_adventure/P2230698_R1.JPG" alt="写真 38">
-                    <div class="photo-caption">写真 38</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230687_R1.JPG', '画像 38', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230687_R1.JPG" alt="画像 38">
+                    <div class="photo-caption">画像 38</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230699_R1.JPG', '写真 39')">
-                    <img src="img/memories/12_iriomote_adventure/P2230699_R1.JPG" alt="写真 39">
-                    <div class="photo-caption">写真 39</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230689_R1.JPG', '画像 39', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230689_R1.JPG" alt="画像 39">
+                    <div class="photo-caption">画像 39</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230700_R1.JPG', '写真 40')">
-                    <img src="img/memories/12_iriomote_adventure/P2230700_R1.JPG" alt="写真 40">
-                    <div class="photo-caption">写真 40</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230690_R1.JPG', '画像 40', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230690_R1.JPG" alt="画像 40">
+                    <div class="photo-caption">画像 40</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230701_R1.JPG', '写真 41')">
-                    <img src="img/memories/12_iriomote_adventure/P2230701_R1.JPG" alt="写真 41">
-                    <div class="photo-caption">写真 41</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230691_R1.JPG', '画像 41', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230691_R1.JPG" alt="画像 41">
+                    <div class="photo-caption">画像 41</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230702_R1.JPG', '写真 42')">
-                    <img src="img/memories/12_iriomote_adventure/P2230702_R1.JPG" alt="写真 42">
-                    <div class="photo-caption">写真 42</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230692_R1.JPG', '画像 42', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230692_R1.JPG" alt="画像 42">
+                    <div class="photo-caption">画像 42</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230704_R1.JPG', '写真 43')">
-                    <img src="img/memories/12_iriomote_adventure/P2230704_R1.JPG" alt="写真 43">
-                    <div class="photo-caption">写真 43</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230693_R1.JPG', '画像 43', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230693_R1.JPG" alt="画像 43">
+                    <div class="photo-caption">画像 43</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230705_R1.JPG', '写真 44')">
-                    <img src="img/memories/12_iriomote_adventure/P2230705_R1.JPG" alt="写真 44">
-                    <div class="photo-caption">写真 44</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230695_R1.JPG', '画像 44', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230695_R1.JPG" alt="画像 44">
+                    <div class="photo-caption">画像 44</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230706_R1.JPG', '写真 45')">
-                    <img src="img/memories/12_iriomote_adventure/P2230706_R1.JPG" alt="写真 45">
-                    <div class="photo-caption">写真 45</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230697_R1.JPG', '画像 45', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230697_R1.JPG" alt="画像 45">
+                    <div class="photo-caption">画像 45</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230708_R1.JPG', '写真 46')">
-                    <img src="img/memories/12_iriomote_adventure/P2230708_R1.JPG" alt="写真 46">
-                    <div class="photo-caption">写真 46</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230698_R1.JPG', '画像 46', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230698_R1.JPG" alt="画像 46">
+                    <div class="photo-caption">画像 46</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230709_R1.JPG', '写真 47')">
-                    <img src="img/memories/12_iriomote_adventure/P2230709_R1.JPG" alt="写真 47">
-                    <div class="photo-caption">写真 47</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230699_R1.JPG', '画像 47', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230699_R1.JPG" alt="画像 47">
+                    <div class="photo-caption">画像 47</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230712_R1.JPG', '写真 48')">
-                    <img src="img/memories/12_iriomote_adventure/P2230712_R1.JPG" alt="写真 48">
-                    <div class="photo-caption">写真 48</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230700_R1.JPG', '画像 48', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230700_R1.JPG" alt="画像 48">
+                    <div class="photo-caption">画像 48</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230713_R1.JPG', '写真 49')">
-                    <img src="img/memories/12_iriomote_adventure/P2230713_R1.JPG" alt="写真 49">
-                    <div class="photo-caption">写真 49</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230701_R1.JPG', '画像 49', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230701_R1.JPG" alt="画像 49">
+                    <div class="photo-caption">画像 49</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230715_R1.JPG', '写真 50')">
-                    <img src="img/memories/12_iriomote_adventure/P2230715_R1.JPG" alt="写真 50">
-                    <div class="photo-caption">写真 50</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230702_R1.JPG', '画像 50', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230702_R1.JPG" alt="画像 50">
+                    <div class="photo-caption">画像 50</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230719_R1.JPG', '写真 51')">
-                    <img src="img/memories/12_iriomote_adventure/P2230719_R1.JPG" alt="写真 51">
-                    <div class="photo-caption">写真 51</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230704_R1.JPG', '画像 51', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230704_R1.JPG" alt="画像 51">
+                    <div class="photo-caption">画像 51</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230720_R1.JPG', '写真 52')">
-                    <img src="img/memories/12_iriomote_adventure/P2230720_R1.JPG" alt="写真 52">
-                    <div class="photo-caption">写真 52</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230705_R1.JPG', '画像 52', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230705_R1.JPG" alt="画像 52">
+                    <div class="photo-caption">画像 52</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230721_R1.JPG', '写真 53')">
-                    <img src="img/memories/12_iriomote_adventure/P2230721_R1.JPG" alt="写真 53">
-                    <div class="photo-caption">写真 53</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230706_R1.JPG', '画像 53', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230706_R1.JPG" alt="画像 53">
+                    <div class="photo-caption">画像 53</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230722_R1.JPG', '写真 54')">
-                    <img src="img/memories/12_iriomote_adventure/P2230722_R1.JPG" alt="写真 54">
-                    <div class="photo-caption">写真 54</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230708_R1.JPG', '画像 54', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230708_R1.JPG" alt="画像 54">
+                    <div class="photo-caption">画像 54</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230725_R1.JPG', '写真 55')">
-                    <img src="img/memories/12_iriomote_adventure/P2230725_R1.JPG" alt="写真 55">
-                    <div class="photo-caption">写真 55</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230709_R1.JPG', '画像 55', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230709_R1.JPG" alt="画像 55">
+                    <div class="photo-caption">画像 55</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230726_R1.JPG', '写真 56')">
-                    <img src="img/memories/12_iriomote_adventure/P2230726_R1.JPG" alt="写真 56">
-                    <div class="photo-caption">写真 56</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230712_R1.JPG', '画像 56', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230712_R1.JPG" alt="画像 56">
+                    <div class="photo-caption">画像 56</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230728_R1.JPG', '写真 57')">
-                    <img src="img/memories/12_iriomote_adventure/P2230728_R1.JPG" alt="写真 57">
-                    <div class="photo-caption">写真 57</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230713_R1.JPG', '画像 57', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230713_R1.JPG" alt="画像 57">
+                    <div class="photo-caption">画像 57</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230729_R1.JPG', '写真 58')">
-                    <img src="img/memories/12_iriomote_adventure/P2230729_R1.JPG" alt="写真 58">
-                    <div class="photo-caption">写真 58</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230715_R1.JPG', '画像 58', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230715_R1.JPG" alt="画像 58">
+                    <div class="photo-caption">画像 58</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230731_R1.JPG', '写真 59')">
-                    <img src="img/memories/12_iriomote_adventure/P2230731_R1.JPG" alt="写真 59">
-                    <div class="photo-caption">写真 59</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230719_R1.JPG', '画像 59', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230719_R1.JPG" alt="画像 59">
+                    <div class="photo-caption">画像 59</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230732_R1.JPG', '写真 60')">
-                    <img src="img/memories/12_iriomote_adventure/P2230732_R1.JPG" alt="写真 60">
-                    <div class="photo-caption">写真 60</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230720_R1.JPG', '画像 60', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230720_R1.JPG" alt="画像 60">
+                    <div class="photo-caption">画像 60</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230734_R1.JPG', '写真 61')">
-                    <img src="img/memories/12_iriomote_adventure/P2230734_R1.JPG" alt="写真 61">
-                    <div class="photo-caption">写真 61</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230721_R1.JPG', '画像 61', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230721_R1.JPG" alt="画像 61">
+                    <div class="photo-caption">画像 61</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230736_R1.JPG', '写真 62')">
-                    <img src="img/memories/12_iriomote_adventure/P2230736_R1.JPG" alt="写真 62">
-                    <div class="photo-caption">写真 62</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230722_R1.JPG', '画像 62', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230722_R1.JPG" alt="画像 62">
+                    <div class="photo-caption">画像 62</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230738_R1.JPG', '写真 63')">
-                    <img src="img/memories/12_iriomote_adventure/P2230738_R1.JPG" alt="写真 63">
-                    <div class="photo-caption">写真 63</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230725_R1.JPG', '画像 63', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230725_R1.JPG" alt="画像 63">
+                    <div class="photo-caption">画像 63</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230743_R1.JPG', '写真 64')">
-                    <img src="img/memories/12_iriomote_adventure/P2230743_R1.JPG" alt="写真 64">
-                    <div class="photo-caption">写真 64</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230726_R1.JPG', '画像 64', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230726_R1.JPG" alt="画像 64">
+                    <div class="photo-caption">画像 64</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230750_R1.JPG', '写真 65')">
-                    <img src="img/memories/12_iriomote_adventure/P2230750_R1.JPG" alt="写真 65">
-                    <div class="photo-caption">写真 65</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230728_R1.JPG', '画像 65', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230728_R1.JPG" alt="画像 65">
+                    <div class="photo-caption">画像 65</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230751_R1.JPG', '写真 66')">
-                    <img src="img/memories/12_iriomote_adventure/P2230751_R1.JPG" alt="写真 66">
-                    <div class="photo-caption">写真 66</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230729_R1.JPG', '画像 66', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230729_R1.JPG" alt="画像 66">
+                    <div class="photo-caption">画像 66</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230753_R1.JPG', '写真 67')">
-                    <img src="img/memories/12_iriomote_adventure/P2230753_R1.JPG" alt="写真 67">
-                    <div class="photo-caption">写真 67</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230731_R1.JPG', '画像 67', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230731_R1.JPG" alt="画像 67">
+                    <div class="photo-caption">画像 67</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230754_R1.JPG', '写真 68')">
-                    <img src="img/memories/12_iriomote_adventure/P2230754_R1.JPG" alt="写真 68">
-                    <div class="photo-caption">写真 68</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230732_R1.JPG', '画像 68', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230732_R1.JPG" alt="画像 68">
+                    <div class="photo-caption">画像 68</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230760_R1.JPG', '写真 69')">
-                    <img src="img/memories/12_iriomote_adventure/P2230760_R1.JPG" alt="写真 69">
-                    <div class="photo-caption">写真 69</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230734_R1.JPG', '画像 69', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230734_R1.JPG" alt="画像 69">
+                    <div class="photo-caption">画像 69</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230763_R1.JPG', '写真 70')">
-                    <img src="img/memories/12_iriomote_adventure/P2230763_R1.JPG" alt="写真 70">
-                    <div class="photo-caption">写真 70</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230736_R1.JPG', '画像 70', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230736_R1.JPG" alt="画像 70">
+                    <div class="photo-caption">画像 70</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230765_R1.JPG', '写真 71')">
-                    <img src="img/memories/12_iriomote_adventure/P2230765_R1.JPG" alt="写真 71">
-                    <div class="photo-caption">写真 71</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230738_R1.JPG', '画像 71', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230738_R1.JPG" alt="画像 71">
+                    <div class="photo-caption">画像 71</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230767_R1.JPG', '写真 72')">
-                    <img src="img/memories/12_iriomote_adventure/P2230767_R1.JPG" alt="写真 72">
-                    <div class="photo-caption">写真 72</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230743_R1.JPG', '画像 72', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230743_R1.JPG" alt="画像 72">
+                    <div class="photo-caption">画像 72</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230769_R1.JPG', '写真 73')">
-                    <img src="img/memories/12_iriomote_adventure/P2230769_R1.JPG" alt="写真 73">
-                    <div class="photo-caption">写真 73</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230750_R1.JPG', '画像 73', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230750_R1.JPG" alt="画像 73">
+                    <div class="photo-caption">画像 73</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230774_R1.JPG', '写真 74')">
-                    <img src="img/memories/12_iriomote_adventure/P2230774_R1.JPG" alt="写真 74">
-                    <div class="photo-caption">写真 74</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230751_R1.JPG', '画像 74', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230751_R1.JPG" alt="画像 74">
+                    <div class="photo-caption">画像 74</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230775_R1.JPG', '写真 75')">
-                    <img src="img/memories/12_iriomote_adventure/P2230775_R1.JPG" alt="写真 75">
-                    <div class="photo-caption">写真 75</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230753_R1.JPG', '画像 75', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230753_R1.JPG" alt="画像 75">
+                    <div class="photo-caption">画像 75</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230779_R1.JPG', '写真 76')">
-                    <img src="img/memories/12_iriomote_adventure/P2230779_R1.JPG" alt="写真 76">
-                    <div class="photo-caption">写真 76</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230754_R1.JPG', '画像 76', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230754_R1.JPG" alt="画像 76">
+                    <div class="photo-caption">画像 76</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230780_R1.JPG', '写真 77')">
-                    <img src="img/memories/12_iriomote_adventure/P2230780_R1.JPG" alt="写真 77">
-                    <div class="photo-caption">写真 77</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230760_R1.JPG', '画像 77', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230760_R1.JPG" alt="画像 77">
+                    <div class="photo-caption">画像 77</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230786_R1.JPG', '写真 78')">
-                    <img src="img/memories/12_iriomote_adventure/P2230786_R1.JPG" alt="写真 78">
-                    <div class="photo-caption">写真 78</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230763_R1.JPG', '画像 78', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230763_R1.JPG" alt="画像 78">
+                    <div class="photo-caption">画像 78</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230796_R1.JPG', '写真 79')">
-                    <img src="img/memories/12_iriomote_adventure/P2230796_R1.JPG" alt="写真 79">
-                    <div class="photo-caption">写真 79</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230765_R1.JPG', '画像 79', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230765_R1.JPG" alt="画像 79">
+                    <div class="photo-caption">画像 79</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230799_R1.JPG', '写真 80')">
-                    <img src="img/memories/12_iriomote_adventure/P2230799_R1.JPG" alt="写真 80">
-                    <div class="photo-caption">写真 80</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230767_R1.JPG', '画像 80', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230767_R1.JPG" alt="画像 80">
+                    <div class="photo-caption">画像 80</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230801_R1.JPG', '写真 81')">
-                    <img src="img/memories/12_iriomote_adventure/P2230801_R1.JPG" alt="写真 81">
-                    <div class="photo-caption">写真 81</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230769_R1.JPG', '画像 81', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230769_R1.JPG" alt="画像 81">
+                    <div class="photo-caption">画像 81</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230802_R1.JPG', '写真 82')">
-                    <img src="img/memories/12_iriomote_adventure/P2230802_R1.JPG" alt="写真 82">
-                    <div class="photo-caption">写真 82</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230774_R1.JPG', '画像 82', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230774_R1.JPG" alt="画像 82">
+                    <div class="photo-caption">画像 82</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230805_R1.JPG', '写真 83')">
-                    <img src="img/memories/12_iriomote_adventure/P2230805_R1.JPG" alt="写真 83">
-                    <div class="photo-caption">写真 83</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230775_R1.JPG', '画像 83', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230775_R1.JPG" alt="画像 83">
+                    <div class="photo-caption">画像 83</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230808_R1.JPG', '写真 84')">
-                    <img src="img/memories/12_iriomote_adventure/P2230808_R1.JPG" alt="写真 84">
-                    <div class="photo-caption">写真 84</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230779_R1.JPG', '画像 84', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230779_R1.JPG" alt="画像 84">
+                    <div class="photo-caption">画像 84</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230809_R1.JPG', '写真 85')">
-                    <img src="img/memories/12_iriomote_adventure/P2230809_R1.JPG" alt="写真 85">
-                    <div class="photo-caption">写真 85</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230780_R1.JPG', '画像 85', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230780_R1.JPG" alt="画像 85">
+                    <div class="photo-caption">画像 85</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230810_R1.JPG', '写真 86')">
-                    <img src="img/memories/12_iriomote_adventure/P2230810_R1.JPG" alt="写真 86">
-                    <div class="photo-caption">写真 86</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230786_R1.JPG', '画像 86', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230786_R1.JPG" alt="画像 86">
+                    <div class="photo-caption">画像 86</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230812_R1.JPG', '写真 87')">
-                    <img src="img/memories/12_iriomote_adventure/P2230812_R1.JPG" alt="写真 87">
-                    <div class="photo-caption">写真 87</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230796_R1.JPG', '画像 87', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230796_R1.JPG" alt="画像 87">
+                    <div class="photo-caption">画像 87</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230815_R1.JPG', '写真 88')">
-                    <img src="img/memories/12_iriomote_adventure/P2230815_R1.JPG" alt="写真 88">
-                    <div class="photo-caption">写真 88</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230799_R1.JPG', '画像 88', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230799_R1.JPG" alt="画像 88">
+                    <div class="photo-caption">画像 88</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230819_R1.JPG', '写真 89')">
-                    <img src="img/memories/12_iriomote_adventure/P2230819_R1.JPG" alt="写真 89">
-                    <div class="photo-caption">写真 89</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230801_R1.JPG', '画像 89', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230801_R1.JPG" alt="画像 89">
+                    <div class="photo-caption">画像 89</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230820_R1.JPG', '写真 90')">
-                    <img src="img/memories/12_iriomote_adventure/P2230820_R1.JPG" alt="写真 90">
-                    <div class="photo-caption">写真 90</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230802_R1.JPG', '画像 90', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230802_R1.JPG" alt="画像 90">
+                    <div class="photo-caption">画像 90</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230822_R1.JPG', '写真 91')">
-                    <img src="img/memories/12_iriomote_adventure/P2230822_R1.JPG" alt="写真 91">
-                    <div class="photo-caption">写真 91</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230805_R1.JPG', '画像 91', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230805_R1.JPG" alt="画像 91">
+                    <div class="photo-caption">画像 91</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230823_R1.JPG', '写真 92')">
-                    <img src="img/memories/12_iriomote_adventure/P2230823_R1.JPG" alt="写真 92">
-                    <div class="photo-caption">写真 92</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230808_R1.JPG', '画像 92', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230808_R1.JPG" alt="画像 92">
+                    <div class="photo-caption">画像 92</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230827_R1.JPG', '写真 93')">
-                    <img src="img/memories/12_iriomote_adventure/P2230827_R1.JPG" alt="写真 93">
-                    <div class="photo-caption">写真 93</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230809_R1.JPG', '画像 93', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230809_R1.JPG" alt="画像 93">
+                    <div class="photo-caption">画像 93</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230831_R1.JPG', '写真 94')">
-                    <img src="img/memories/12_iriomote_adventure/P2230831_R1.JPG" alt="写真 94">
-                    <div class="photo-caption">写真 94</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230810_R1.JPG', '画像 94', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230810_R1.JPG" alt="画像 94">
+                    <div class="photo-caption">画像 94</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230832_R1.JPG', '写真 95')">
-                    <img src="img/memories/12_iriomote_adventure/P2230832_R1.JPG" alt="写真 95">
-                    <div class="photo-caption">写真 95</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230812_R1.JPG', '画像 95', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230812_R1.JPG" alt="画像 95">
+                    <div class="photo-caption">画像 95</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230833_R1.JPG', '写真 96')">
-                    <img src="img/memories/12_iriomote_adventure/P2230833_R1.JPG" alt="写真 96">
-                    <div class="photo-caption">写真 96</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230815_R1.JPG', '画像 96', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230815_R1.JPG" alt="画像 96">
+                    <div class="photo-caption">画像 96</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230834_R1.JPG', '写真 97')">
-                    <img src="img/memories/12_iriomote_adventure/P2230834_R1.JPG" alt="写真 97">
-                    <div class="photo-caption">写真 97</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230819_R1.JPG', '画像 97', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230819_R1.JPG" alt="画像 97">
+                    <div class="photo-caption">画像 97</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230835_R1.JPG', '写真 98')">
-                    <img src="img/memories/12_iriomote_adventure/P2230835_R1.JPG" alt="写真 98">
-                    <div class="photo-caption">写真 98</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230820_R1.JPG', '画像 98', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230820_R1.JPG" alt="画像 98">
+                    <div class="photo-caption">画像 98</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230837_R1.JPG', '写真 99')">
-                    <img src="img/memories/12_iriomote_adventure/P2230837_R1.JPG" alt="写真 99">
-                    <div class="photo-caption">写真 99</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230822_R1.JPG', '画像 99', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230822_R1.JPG" alt="画像 99">
+                    <div class="photo-caption">画像 99</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230838_R1.JPG', '写真 100')">
-                    <img src="img/memories/12_iriomote_adventure/P2230838_R1.JPG" alt="写真 100">
-                    <div class="photo-caption">写真 100</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230823_R1.JPG', '画像 100', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230823_R1.JPG" alt="画像 100">
+                    <div class="photo-caption">画像 100</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230839_R1.JPG', '写真 101')">
-                    <img src="img/memories/12_iriomote_adventure/P2230839_R1.JPG" alt="写真 101">
-                    <div class="photo-caption">写真 101</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230827_R1.JPG', '画像 101', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230827_R1.JPG" alt="画像 101">
+                    <div class="photo-caption">画像 101</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230840_R1.JPG', '写真 102')">
-                    <img src="img/memories/12_iriomote_adventure/P2230840_R1.JPG" alt="写真 102">
-                    <div class="photo-caption">写真 102</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230831_R1.JPG', '画像 102', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230831_R1.JPG" alt="画像 102">
+                    <div class="photo-caption">画像 102</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230841_R1.JPG', '写真 103')">
-                    <img src="img/memories/12_iriomote_adventure/P2230841_R1.JPG" alt="写真 103">
-                    <div class="photo-caption">写真 103</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230832_R1.JPG', '画像 103', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230832_R1.JPG" alt="画像 103">
+                    <div class="photo-caption">画像 103</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230844_R1.JPG', '写真 104')">
-                    <img src="img/memories/12_iriomote_adventure/P2230844_R1.JPG" alt="写真 104">
-                    <div class="photo-caption">写真 104</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230833_R1.JPG', '画像 104', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230833_R1.JPG" alt="画像 104">
+                    <div class="photo-caption">画像 104</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230846_R1.JPG', '写真 105')">
-                    <img src="img/memories/12_iriomote_adventure/P2230846_R1.JPG" alt="写真 105">
-                    <div class="photo-caption">写真 105</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230834_R1.JPG', '画像 105', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230834_R1.JPG" alt="画像 105">
+                    <div class="photo-caption">画像 105</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230851_R1.JPG', '写真 106')">
-                    <img src="img/memories/12_iriomote_adventure/P2230851_R1.JPG" alt="写真 106">
-                    <div class="photo-caption">写真 106</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230835_R1.JPG', '画像 106', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230835_R1.JPG" alt="画像 106">
+                    <div class="photo-caption">画像 106</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230853_R1.JPG', '写真 107')">
-                    <img src="img/memories/12_iriomote_adventure/P2230853_R1.JPG" alt="写真 107">
-                    <div class="photo-caption">写真 107</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230837_R1.JPG', '画像 107', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230837_R1.JPG" alt="画像 107">
+                    <div class="photo-caption">画像 107</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230856_R1.JPG', '写真 108')">
-                    <img src="img/memories/12_iriomote_adventure/P2230856_R1.JPG" alt="写真 108">
-                    <div class="photo-caption">写真 108</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230838_R1.JPG', '画像 108', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230838_R1.JPG" alt="画像 108">
+                    <div class="photo-caption">画像 108</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230857_R1.JPG', '写真 109')">
-                    <img src="img/memories/12_iriomote_adventure/P2230857_R1.JPG" alt="写真 109">
-                    <div class="photo-caption">写真 109</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230839_R1.JPG', '画像 109', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230839_R1.JPG" alt="画像 109">
+                    <div class="photo-caption">画像 109</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230858_R1.JPG', '写真 110')">
-                    <img src="img/memories/12_iriomote_adventure/P2230858_R1.JPG" alt="写真 110">
-                    <div class="photo-caption">写真 110</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230840_R1.JPG', '画像 110', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230840_R1.JPG" alt="画像 110">
+                    <div class="photo-caption">画像 110</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230859_R1.JPG', '写真 111')">
-                    <img src="img/memories/12_iriomote_adventure/P2230859_R1.JPG" alt="写真 111">
-                    <div class="photo-caption">写真 111</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230841_R1.JPG', '画像 111', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230841_R1.JPG" alt="画像 111">
+                    <div class="photo-caption">画像 111</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230860_R1.JPG', '写真 112')">
-                    <img src="img/memories/12_iriomote_adventure/P2230860_R1.JPG" alt="写真 112">
-                    <div class="photo-caption">写真 112</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230844_R1.JPG', '画像 112', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230844_R1.JPG" alt="画像 112">
+                    <div class="photo-caption">画像 112</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230861_R1.JPG', '写真 113')">
-                    <img src="img/memories/12_iriomote_adventure/P2230861_R1.JPG" alt="写真 113">
-                    <div class="photo-caption">写真 113</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230846_R1.JPG', '画像 113', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230846_R1.JPG" alt="画像 113">
+                    <div class="photo-caption">画像 113</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230862_R1.JPG', '写真 114')">
-                    <img src="img/memories/12_iriomote_adventure/P2230862_R1.JPG" alt="写真 114">
-                    <div class="photo-caption">写真 114</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230851_R1.JPG', '画像 114', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230851_R1.JPG" alt="画像 114">
+                    <div class="photo-caption">画像 114</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230864_R1.JPG', '写真 115')">
-                    <img src="img/memories/12_iriomote_adventure/P2230864_R1.JPG" alt="写真 115">
-                    <div class="photo-caption">写真 115</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230853_R1.JPG', '画像 115', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230853_R1.JPG" alt="画像 115">
+                    <div class="photo-caption">画像 115</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230865_R1.JPG', '写真 116')">
-                    <img src="img/memories/12_iriomote_adventure/P2230865_R1.JPG" alt="写真 116">
-                    <div class="photo-caption">写真 116</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230856_R1.JPG', '画像 116', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230856_R1.JPG" alt="画像 116">
+                    <div class="photo-caption">画像 116</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230867_R1.JPG', '写真 117')">
-                    <img src="img/memories/12_iriomote_adventure/P2230867_R1.JPG" alt="写真 117">
-                    <div class="photo-caption">写真 117</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230857_R1.JPG', '画像 117', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230857_R1.JPG" alt="画像 117">
+                    <div class="photo-caption">画像 117</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230868_R1.JPG', '写真 118')">
-                    <img src="img/memories/12_iriomote_adventure/P2230868_R1.JPG" alt="写真 118">
-                    <div class="photo-caption">写真 118</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230858_R1.JPG', '画像 118', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230858_R1.JPG" alt="画像 118">
+                    <div class="photo-caption">画像 118</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230869_R1.JPG', '写真 119')">
-                    <img src="img/memories/12_iriomote_adventure/P2230869_R1.JPG" alt="写真 119">
-                    <div class="photo-caption">写真 119</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230859_R1.JPG', '画像 119', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230859_R1.JPG" alt="画像 119">
+                    <div class="photo-caption">画像 119</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230870_R1.JPG', '写真 120')">
-                    <img src="img/memories/12_iriomote_adventure/P2230870_R1.JPG" alt="写真 120">
-                    <div class="photo-caption">写真 120</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230860_R1.JPG', '画像 120', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230860_R1.JPG" alt="画像 120">
+                    <div class="photo-caption">画像 120</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230871_R1.JPG', '写真 121')">
-                    <img src="img/memories/12_iriomote_adventure/P2230871_R1.JPG" alt="写真 121">
-                    <div class="photo-caption">写真 121</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230861_R1.JPG', '画像 121', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230861_R1.JPG" alt="画像 121">
+                    <div class="photo-caption">画像 121</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230872_R1.JPG', '写真 122')">
-                    <img src="img/memories/12_iriomote_adventure/P2230872_R1.JPG" alt="写真 122">
-                    <div class="photo-caption">写真 122</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230862_R1.JPG', '画像 122', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230862_R1.JPG" alt="画像 122">
+                    <div class="photo-caption">画像 122</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230874_R1.JPG', '写真 123')">
-                    <img src="img/memories/12_iriomote_adventure/P2230874_R1.JPG" alt="写真 123">
-                    <div class="photo-caption">写真 123</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230864_R1.JPG', '画像 123', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230864_R1.JPG" alt="画像 123">
+                    <div class="photo-caption">画像 123</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230875_R1.JPG', '写真 124')">
-                    <img src="img/memories/12_iriomote_adventure/P2230875_R1.JPG" alt="写真 124">
-                    <div class="photo-caption">写真 124</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230865_R1.JPG', '画像 124', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230865_R1.JPG" alt="画像 124">
+                    <div class="photo-caption">画像 124</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230876_R1.JPG', '写真 125')">
-                    <img src="img/memories/12_iriomote_adventure/P2230876_R1.JPG" alt="写真 125">
-                    <div class="photo-caption">写真 125</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230867_R1.JPG', '画像 125', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230867_R1.JPG" alt="画像 125">
+                    <div class="photo-caption">画像 125</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230877_R1.JPG', '写真 126')">
-                    <img src="img/memories/12_iriomote_adventure/P2230877_R1.JPG" alt="写真 126">
-                    <div class="photo-caption">写真 126</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230868_R1.JPG', '画像 126', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230868_R1.JPG" alt="画像 126">
+                    <div class="photo-caption">画像 126</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230879_R1.JPG', '写真 127')">
-                    <img src="img/memories/12_iriomote_adventure/P2230879_R1.JPG" alt="写真 127">
-                    <div class="photo-caption">写真 127</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230869_R1.JPG', '画像 127', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230869_R1.JPG" alt="画像 127">
+                    <div class="photo-caption">画像 127</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230880_R1.JPG', '写真 128')">
-                    <img src="img/memories/12_iriomote_adventure/P2230880_R1.JPG" alt="写真 128">
-                    <div class="photo-caption">写真 128</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230870_R1.JPG', '画像 128', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230870_R1.JPG" alt="画像 128">
+                    <div class="photo-caption">画像 128</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230881_R1.JPG', '写真 129')">
-                    <img src="img/memories/12_iriomote_adventure/P2230881_R1.JPG" alt="写真 129">
-                    <div class="photo-caption">写真 129</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230871_R1.JPG', '画像 129', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230871_R1.JPG" alt="画像 129">
+                    <div class="photo-caption">画像 129</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230882_R1.JPG', '写真 130')">
-                    <img src="img/memories/12_iriomote_adventure/P2230882_R1.JPG" alt="写真 130">
-                    <div class="photo-caption">写真 130</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230872_R1.JPG', '画像 130', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230872_R1.JPG" alt="画像 130">
+                    <div class="photo-caption">画像 130</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230883_R1.JPG', '写真 131')">
-                    <img src="img/memories/12_iriomote_adventure/P2230883_R1.JPG" alt="写真 131">
-                    <div class="photo-caption">写真 131</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230874_R1.JPG', '画像 131', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230874_R1.JPG" alt="画像 131">
+                    <div class="photo-caption">画像 131</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230884_R1.JPG', '写真 132')">
-                    <img src="img/memories/12_iriomote_adventure/P2230884_R1.JPG" alt="写真 132">
-                    <div class="photo-caption">写真 132</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230875_R1.JPG', '画像 132', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230875_R1.JPG" alt="画像 132">
+                    <div class="photo-caption">画像 132</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230887_R1.JPG', '写真 133')">
-                    <img src="img/memories/12_iriomote_adventure/P2230887_R1.JPG" alt="写真 133">
-                    <div class="photo-caption">写真 133</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230876_R1.JPG', '画像 133', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230876_R1.JPG" alt="画像 133">
+                    <div class="photo-caption">画像 133</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230888_R1.JPG', '写真 134')">
-                    <img src="img/memories/12_iriomote_adventure/P2230888_R1.JPG" alt="写真 134">
-                    <div class="photo-caption">写真 134</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230877_R1.JPG', '画像 134', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230877_R1.JPG" alt="画像 134">
+                    <div class="photo-caption">画像 134</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230893_R1.JPG', '写真 135')">
-                    <img src="img/memories/12_iriomote_adventure/P2230893_R1.JPG" alt="写真 135">
-                    <div class="photo-caption">写真 135</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230879_R1.JPG', '画像 135', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230879_R1.JPG" alt="画像 135">
+                    <div class="photo-caption">画像 135</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230894_R1.JPG', '写真 136')">
-                    <img src="img/memories/12_iriomote_adventure/P2230894_R1.JPG" alt="写真 136">
-                    <div class="photo-caption">写真 136</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230880_R1.JPG', '画像 136', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230880_R1.JPG" alt="画像 136">
+                    <div class="photo-caption">画像 136</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230895_R1.JPG', '写真 137')">
-                    <img src="img/memories/12_iriomote_adventure/P2230895_R1.JPG" alt="写真 137">
-                    <div class="photo-caption">写真 137</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230881_R1.JPG', '画像 137', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230881_R1.JPG" alt="画像 137">
+                    <div class="photo-caption">画像 137</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230896_R1.JPG', '写真 138')">
-                    <img src="img/memories/12_iriomote_adventure/P2230896_R1.JPG" alt="写真 138">
-                    <div class="photo-caption">写真 138</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230882_R1.JPG', '画像 138', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230882_R1.JPG" alt="画像 138">
+                    <div class="photo-caption">画像 138</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230898_R1.JPG', '写真 139')">
-                    <img src="img/memories/12_iriomote_adventure/P2230898_R1.JPG" alt="写真 139">
-                    <div class="photo-caption">写真 139</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230883_R1.JPG', '画像 139', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230883_R1.JPG" alt="画像 139">
+                    <div class="photo-caption">画像 139</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230900_R1.JPG', '写真 140')">
-                    <img src="img/memories/12_iriomote_adventure/P2230900_R1.JPG" alt="写真 140">
-                    <div class="photo-caption">写真 140</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230884_R1.JPG', '画像 140', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230884_R1.JPG" alt="画像 140">
+                    <div class="photo-caption">画像 140</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230901_R1.JPG', '写真 141')">
-                    <img src="img/memories/12_iriomote_adventure/P2230901_R1.JPG" alt="写真 141">
-                    <div class="photo-caption">写真 141</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230887_R1.JPG', '画像 141', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230887_R1.JPG" alt="画像 141">
+                    <div class="photo-caption">画像 141</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230902_R1.JPG', '写真 142')">
-                    <img src="img/memories/12_iriomote_adventure/P2230902_R1.JPG" alt="写真 142">
-                    <div class="photo-caption">写真 142</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230888_R1.JPG', '画像 142', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230888_R1.JPG" alt="画像 142">
+                    <div class="photo-caption">画像 142</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230903_R1.JPG', '写真 143')">
-                    <img src="img/memories/12_iriomote_adventure/P2230903_R1.JPG" alt="写真 143">
-                    <div class="photo-caption">写真 143</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230893_R1.JPG', '画像 143', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230893_R1.JPG" alt="画像 143">
+                    <div class="photo-caption">画像 143</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230904_R1.JPG', '写真 144')">
-                    <img src="img/memories/12_iriomote_adventure/P2230904_R1.JPG" alt="写真 144">
-                    <div class="photo-caption">写真 144</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230894_R1.JPG', '画像 144', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230894_R1.JPG" alt="画像 144">
+                    <div class="photo-caption">画像 144</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230905_R1.JPG', '写真 145')">
-                    <img src="img/memories/12_iriomote_adventure/P2230905_R1.JPG" alt="写真 145">
-                    <div class="photo-caption">写真 145</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230895_R1.JPG', '画像 145', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230895_R1.JPG" alt="画像 145">
+                    <div class="photo-caption">画像 145</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230906_R1.JPG', '写真 146')">
-                    <img src="img/memories/12_iriomote_adventure/P2230906_R1.JPG" alt="写真 146">
-                    <div class="photo-caption">写真 146</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230896_R1.JPG', '画像 146', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230896_R1.JPG" alt="画像 146">
+                    <div class="photo-caption">画像 146</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230907_R1.JPG', '写真 147')">
-                    <img src="img/memories/12_iriomote_adventure/P2230907_R1.JPG" alt="写真 147">
-                    <div class="photo-caption">写真 147</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230898_R1.JPG', '画像 147', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230898_R1.JPG" alt="画像 147">
+                    <div class="photo-caption">画像 147</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230908_R1.JPG', '写真 148')">
-                    <img src="img/memories/12_iriomote_adventure/P2230908_R1.JPG" alt="写真 148">
-                    <div class="photo-caption">写真 148</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230900_R1.JPG', '画像 148', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230900_R1.JPG" alt="画像 148">
+                    <div class="photo-caption">画像 148</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230911_R1.JPG', '写真 149')">
-                    <img src="img/memories/12_iriomote_adventure/P2230911_R1.JPG" alt="写真 149">
-                    <div class="photo-caption">写真 149</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230901_R1.JPG', '画像 149', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230901_R1.JPG" alt="画像 149">
+                    <div class="photo-caption">画像 149</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230912_R1.JPG', '写真 150')">
-                    <img src="img/memories/12_iriomote_adventure/P2230912_R1.JPG" alt="写真 150">
-                    <div class="photo-caption">写真 150</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230902_R1.JPG', '画像 150', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230902_R1.JPG" alt="画像 150">
+                    <div class="photo-caption">画像 150</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230915_R1.JPG', '写真 151')">
-                    <img src="img/memories/12_iriomote_adventure/P2230915_R1.JPG" alt="写真 151">
-                    <div class="photo-caption">写真 151</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230903_R1.JPG', '画像 151', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230903_R1.JPG" alt="画像 151">
+                    <div class="photo-caption">画像 151</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230916_R1.JPG', '写真 152')">
-                    <img src="img/memories/12_iriomote_adventure/P2230916_R1.JPG" alt="写真 152">
-                    <div class="photo-caption">写真 152</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230904_R1.JPG', '画像 152', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230904_R1.JPG" alt="画像 152">
+                    <div class="photo-caption">画像 152</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230918_R1.JPG', '写真 153')">
-                    <img src="img/memories/12_iriomote_adventure/P2230918_R1.JPG" alt="写真 153">
-                    <div class="photo-caption">写真 153</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230905_R1.JPG', '画像 153', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230905_R1.JPG" alt="画像 153">
+                    <div class="photo-caption">画像 153</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230919_R1.JPG', '写真 154')">
-                    <img src="img/memories/12_iriomote_adventure/P2230919_R1.JPG" alt="写真 154">
-                    <div class="photo-caption">写真 154</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230906_R1.JPG', '画像 154', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230906_R1.JPG" alt="画像 154">
+                    <div class="photo-caption">画像 154</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230920_R1.JPG', '写真 155')">
-                    <img src="img/memories/12_iriomote_adventure/P2230920_R1.JPG" alt="写真 155">
-                    <div class="photo-caption">写真 155</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230907_R1.JPG', '画像 155', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230907_R1.JPG" alt="画像 155">
+                    <div class="photo-caption">画像 155</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230922_R1.JPG', '写真 156')">
-                    <img src="img/memories/12_iriomote_adventure/P2230922_R1.JPG" alt="写真 156">
-                    <div class="photo-caption">写真 156</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230908_R1.JPG', '画像 156', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230908_R1.JPG" alt="画像 156">
+                    <div class="photo-caption">画像 156</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230923_R1.JPG', '写真 157')">
-                    <img src="img/memories/12_iriomote_adventure/P2230923_R1.JPG" alt="写真 157">
-                    <div class="photo-caption">写真 157</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230911_R1.JPG', '画像 157', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230911_R1.JPG" alt="画像 157">
+                    <div class="photo-caption">画像 157</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230924_R1.JPG', '写真 158')">
-                    <img src="img/memories/12_iriomote_adventure/P2230924_R1.JPG" alt="写真 158">
-                    <div class="photo-caption">写真 158</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230912_R1.JPG', '画像 158', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230912_R1.JPG" alt="画像 158">
+                    <div class="photo-caption">画像 158</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230925_R1.JPG', '写真 159')">
-                    <img src="img/memories/12_iriomote_adventure/P2230925_R1.JPG" alt="写真 159">
-                    <div class="photo-caption">写真 159</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230915_R1.JPG', '画像 159', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230915_R1.JPG" alt="画像 159">
+                    <div class="photo-caption">画像 159</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230928_R1.JPG', '写真 160')">
-                    <img src="img/memories/12_iriomote_adventure/P2230928_R1.JPG" alt="写真 160">
-                    <div class="photo-caption">写真 160</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230916_R1.JPG', '画像 160', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230916_R1.JPG" alt="画像 160">
+                    <div class="photo-caption">画像 160</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230930_R1.JPG', '写真 161')">
-                    <img src="img/memories/12_iriomote_adventure/P2230930_R1.JPG" alt="写真 161">
-                    <div class="photo-caption">写真 161</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230918_R1.JPG', '画像 161', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230918_R1.JPG" alt="画像 161">
+                    <div class="photo-caption">画像 161</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230932_R1.JPG', '写真 162')">
-                    <img src="img/memories/12_iriomote_adventure/P2230932_R1.JPG" alt="写真 162">
-                    <div class="photo-caption">写真 162</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230919_R1.JPG', '画像 162', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230919_R1.JPG" alt="画像 162">
+                    <div class="photo-caption">画像 162</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230933_R1.JPG', '写真 163')">
-                    <img src="img/memories/12_iriomote_adventure/P2230933_R1.JPG" alt="写真 163">
-                    <div class="photo-caption">写真 163</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230920_R1.JPG', '画像 163', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230920_R1.JPG" alt="画像 163">
+                    <div class="photo-caption">画像 163</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230936_R1.JPG', '写真 164')">
-                    <img src="img/memories/12_iriomote_adventure/P2230936_R1.JPG" alt="写真 164">
-                    <div class="photo-caption">写真 164</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230922_R1.JPG', '画像 164', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230922_R1.JPG" alt="画像 164">
+                    <div class="photo-caption">画像 164</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230937_R1.JPG', '写真 165')">
-                    <img src="img/memories/12_iriomote_adventure/P2230937_R1.JPG" alt="写真 165">
-                    <div class="photo-caption">写真 165</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230923_R1.JPG', '画像 165', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230923_R1.JPG" alt="画像 165">
+                    <div class="photo-caption">画像 165</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/P2230939_R1.JPG', '写真 166')">
-                    <img src="img/memories/12_iriomote_adventure/P2230939_R1.JPG" alt="写真 166">
-                    <div class="photo-caption">写真 166</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230924_R1.JPG', '画像 166', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230924_R1.JPG" alt="画像 166">
+                    <div class="photo-caption">画像 166</div>
                 </div>
-                <div class="photo-card" onclick="openModal('img/memories/12_iriomote_adventure/iriomote.png', '西表島探検')">
-                    <img src="img/memories/12_iriomote_adventure/iriomote.png" alt="西表島探検">
-                    <div class="photo-caption">西表島探検</div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230925_R1.JPG', '画像 167', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230925_R1.JPG" alt="画像 167">
+                    <div class="photo-caption">画像 167</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230928_R1.JPG', '画像 168', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230928_R1.JPG" alt="画像 168">
+                    <div class="photo-caption">画像 168</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230930_R1.JPG', '画像 169', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230930_R1.JPG" alt="画像 169">
+                    <div class="photo-caption">画像 169</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230932_R1.JPG', '画像 170', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230932_R1.JPG" alt="画像 170">
+                    <div class="photo-caption">画像 170</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230933_R1.JPG', '画像 171', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230933_R1.JPG" alt="画像 171">
+                    <div class="photo-caption">画像 171</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230936_R1.JPG', '画像 172', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230936_R1.JPG" alt="画像 172">
+                    <div class="photo-caption">画像 172</div>
+                </div>
+                <div class="photo-card"
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230937_R1.JPG', '画像 173', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230937_R1.JPG" alt="画像 173">
+                    <div class="photo-caption">画像 173</div>
                 </div>
                 <div class="photo-card"
-                    onclick="openModal('img/memories/12_iriomote_adventure/iriomote_cave.png', '西表島探検')">
-                    <img src="img/memories/12_iriomote_adventure/iriomote_cave.png" alt="西表島探検">
-                    <div class="photo-caption">西表島探検</div>
+                    onclick="openModal('img/memories/12_iriomote_adventure/P2230939_R1.JPG', '画像 174', false)">
+                    <img src="img/memories/12_iriomote_adventure/P2230939_R1.JPG" alt="画像 174">
+                    <div class="photo-caption">画像 174</div>
                 </div>
             </div>
         </div>
@@ -1751,30 +1958,17 @@
                 西表島から戻り、みんなで美味しい夕食。旅行の思い出を語り合いました🍺
             </p>
             <div class="photo-grid">
-                <div class="photo-card"
-                    onclick="openModal('img/memories/13_dinner_day4/2CC7D5C9-2EF2-4252-BFEB-4FE987534458_1_105_c.jpeg', '写真 1')">
-                    <img src="img/memories/13_dinner_day4/2CC7D5C9-2EF2-4252-BFEB-4FE987534458_1_105_c.jpeg" alt="写真 1">
-                    <div class="photo-caption">写真 1</div>
+                <div class="photo-card" onclick="openModal('img/memories/13_dinner_day4/IMG_0519.JPG', '画像 1', false)">
+                    <img src="img/memories/13_dinner_day4/IMG_0519.JPG" alt="画像 1">
+                    <div class="photo-caption">画像 1</div>
                 </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/13_dinner_day4/890EAA89-F818-429F-B3FF-CFE625875C6F_1_105_c.jpeg', '写真 2')">
-                    <img src="img/memories/13_dinner_day4/890EAA89-F818-429F-B3FF-CFE625875C6F_1_105_c.jpeg" alt="写真 2">
-                    <div class="photo-caption">写真 2</div>
+                <div class="photo-card" onclick="openModal('img/memories/13_dinner_day4/IMG_0520.JPG', '画像 2', false)">
+                    <img src="img/memories/13_dinner_day4/IMG_0520.JPG" alt="画像 2">
+                    <div class="photo-caption">画像 2</div>
                 </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/13_dinner_day4/8D1322F8-3B40-4F72-826C-ABB0CEA16DE2_1_105_c.jpeg', '写真 3')">
-                    <img src="img/memories/13_dinner_day4/8D1322F8-3B40-4F72-826C-ABB0CEA16DE2_1_105_c.jpeg" alt="写真 3">
-                    <div class="photo-caption">写真 3</div>
-                </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/13_dinner_day4/DE7FF0F2-456D-4B1A-BB24-321941D65E42_1_105_c.jpeg', '写真 4')">
-                    <img src="img/memories/13_dinner_day4/DE7FF0F2-456D-4B1A-BB24-321941D65E42_1_105_c.jpeg" alt="写真 4">
-                    <div class="photo-caption">写真 4</div>
-                </div>
-                <div class="photo-card"
-                    onclick="openModal('img/memories/13_dinner_day4/ishigaki_dinner.png', '美味しいディナー')">
-                    <img src="img/memories/13_dinner_day4/ishigaki_dinner.png" alt="美味しいディナー">
-                    <div class="photo-caption">美味しいディナー</div>
+                <div class="photo-card" onclick="openModal('img/memories/13_dinner_day4/IMG_0521.JPG', '画像 3', false)">
+                    <img src="img/memories/13_dinner_day4/IMG_0521.JPG" alt="画像 3">
+                    <div class="photo-caption">画像 3</div>
                 </div>
             </div>
         </div>
@@ -1787,12 +1981,14 @@
         <span class="prev" onclick="changeLightboxImage(-1, event)">&#10094;</span>
         <span class="next" onclick="changeLightboxImage(1, event)">&#10095;</span>
         <img class="modal-content" id="modalImage">
+        <video class="modal-video" id="modalVideo" controls playsinline></video>
         <div class="modal-caption" id="modalCaption"></div>
     </div>
 
     <script>
         const modal = document.getElementById("photoModal");
         const modalImg = document.getElementById("modalImage");
+        const modalVid = document.getElementById("modalVideo");
         const captionText = document.getElementById("modalCaption");
 
         let currentImageIndex = 0;
@@ -1842,11 +2038,26 @@
             const card = allCards[index];
             if (!card) return;
 
-            // DOMから画像URLとキャプションを取得
+            // DOMから画像・動画URLとキャプションを取得
             const imgEl = card.querySelector('img');
+            const vidEl = card.querySelector('video');
             const capEl = card.querySelector('.photo-caption');
 
-            modalImg.src = imgEl.src;
+            // 一旦両方非表示
+            modalImg.style.display = "none";
+            modalVid.style.display = "none";
+            modalVid.pause();
+            modalVid.src = ""; // reset
+
+            if (vidEl) {
+                modalVid.src = vidEl.src;
+                modalVid.style.display = "block";
+                modalVid.play().catch(e => console.log("Auto-play prevented", e));
+            } else if (imgEl) {
+                modalImg.src = imgEl.src;
+                modalImg.style.display = "block";
+            }
+
             captionText.innerHTML = capEl ? capEl.innerText : '';
             modal.style.display = "flex";
 
@@ -1881,6 +2092,8 @@
             modal.style.opacity = "0";
             setTimeout(() => {
                 modal.style.display = "none";
+                modalVid.pause();
+                modalVid.src = "";
             }, 300);
         }
 
