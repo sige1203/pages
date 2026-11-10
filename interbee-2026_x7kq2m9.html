@@ -67,6 +67,13 @@
   .stop{flex:1 1 100px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:9px 10px;text-align:center}
   .stop .p{font-weight:800;font-size:14.5px}.stop .t{color:var(--sub);font-size:11.5px}
   .arrow{align-self:center;color:var(--accent);font-weight:800}
+  .hlrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:640px){.hlrow{grid-template-columns:1fr}}
+  .hlmini{background:linear-gradient(180deg,#2e1e08,#221806);border:1px solid var(--accent);border-radius:12px;padding:12px 15px}
+  .hlmini .k{color:var(--accent);font-size:12.5px;font-weight:800;letter-spacing:.08em}
+  .hlmini .w{color:var(--accent2);font-size:13px;font-weight:700;margin-top:3px}
+  .hlmini .v{font-size:15px;font-weight:700;line-height:1.55;margin-top:2px}
+  .hlmini .n{color:var(--sub);font-size:12.5px;line-height:1.6;margin-top:3px}
   /* ---------- highlights ---------- */
   .hl{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media(max-width:700px){.hl{grid-template-columns:1fr}}
@@ -102,6 +109,9 @@
   .tag.ib{background:#3a2408;color:var(--accent);border:1px solid var(--accent)}
   .tag.bts{background:#3a2c07;color:var(--warn,#ffdf6b);border:1px solid #8a6d1f;color:var(--accent2)}
   .linkline{margin-top:8px;font-size:13.5px}
+  details.tl.star{background:rgba(255,138,42,.08);border-radius:0 10px 10px 0;box-shadow:inset 3px 0 0 var(--accent);padding-left:12px;padding-right:10px}
+  details.tl.star::before{background:var(--accent);border-color:var(--accent)}
+  .tag.star{background:#3a2408;color:var(--accent);border:1px solid var(--accent)}
   /* ---------- route list / checklist / budget ---------- */
   .routelist li{margin:9px 0}
   .todo{list-style:none;padding-left:0}
@@ -150,6 +160,12 @@
       <div class="fact"><div class="k">日程</div><div class="v">2026年11月19日（木）〜20日（金）・1泊2日（両日とも休暇取得済み）</div></div>
       <div class="fact"><div class="k">出発拠点</div><div class="v">安曇野 → 松本駅まで車で約30分</div></div>
       <div class="fact"><div class="k">予約済み合計</div><div class="v"><b>¥13,897</b>（あずさ特急券 往復 ¥5,100 ＋ ホテル ¥6,197 ＋ 展示チケット ¥2,600）。残りは乗車券（Suica）・都内移動・食事などの実費</div></div>
+    </div>
+        <p class="daylabel" style="margin-top:16px;color:var(--accent)">⭐ ハイライト予定（固定の3つ）</p>
+    <div class="hlrow">
+      <div class="hlmini"><div class="k">🎬 映画</div><div class="w">11/19（木）20:30頃〜</div><div class="v">『ゴジラ-0.0』IMAXレーザー/GT レイトショー</div><div class="n">グランドシネマサンシャイン池袋 ※座席は11/16 21:00の会員先行で確保予定</div></div>
+      <div class="hlmini"><div class="k">🏫 参観日</div><div class="w">11/20（金）13:45–15:35</div><div class="v">参観日</div><div class="n">帰路の締め切り。あずさ9号で昼に帰宅</div></div>
+      <div class="hlmini"><div class="k">🍻 飲み会</div><div class="w">11/20（金）17:30–20:30</div><div class="v">全席個室 じぶんどき 松本駅前店</div></div>
     </div>
     <p class="note" style="margin-top:14px">コアな予約（あずさ往復・ホテル・展示チケット・Inter BEE事前登録）はすべて完了。残る手続きは『ゴジラ-0.0』の座席確保のみです。ポイントは「19時のあずさ」という締め切りを消したこと。泊まりを挟むことで、Inter BEEは閉場を気にせず夕方まで、展示は空いている平日夜に。20日の固定予定は13:45の参観日と15:30のブライト歯科だけです。</p>
     <p class="daylabel">11/19（木）</p>
@@ -264,7 +280,7 @@
     <details class="tl"><summary><span class="t">15:45 – 17:00</span> <span class="h">海浜幕張 → 東京（京葉線）→ 霞ケ関（丸ノ内線）→ 神谷町（日比谷線）</span></summary><div class="d">麻布台ヒルズ ギャラリーへ。移動は約1時間15分を見込む。</div></details>
     <details class="tl bts"><summary><span class="t">17:15 – 19:30</span> <span class="h">BEYOND THE STRAND</span><span class="tag bts">麻布台ヒルズ</span></summary><div class="d">チケット購入済み（Trip.com 予約番号 1385437456556449、バウチャーはカレンダーに添付）。展示＋特設ショップ。入館の前後には隣のギャラリーカフェでコラボメニュー（シーフード・ピザ ¥2,420／あの日のラズベリーケーキ ¥1,480＝数量限定／ラテ ¥990、特典コースター付き）。ケーキは売り切れの可能性があるので、先に寄るのが安全です。</div><p class="linkline">🔗 <a href="https://beyondthestrand.kojimaproductions.jp/" target="_blank" rel="noopener">展覧会公式サイト</a></p></details>
     <details class="tl"><summary><span class="t">19:45 – 20:15</span> <span class="h">ホテルにチェックイン（ナインアワーズ北新宿）</span></summary><div class="d">予約番号 RYa0nkji5d（¥6,197 支払済み、新大久保駅近く）。荷物を置いて池袋へ。チェックインは翌5:00まで可能で、0時を過ぎる場合のみ事前連絡が必要です。</div><p class="linkline">🔗 <a href="https://ninehours.co.jp/shinjuku-north/" target="_blank" rel="noopener">nine hours 北新宿（公式）</a></p></details>
-    <details class="tl"><summary><span class="t">20:30 – 23:10頃</span> <span class="h">『ゴジラ-0.0』IMAXレーザー/GT レイトショー</span><span class="tag bts">グランドシネマサンシャイン池袋</span></summary><div class="d">20:30以降に始まるGT上映回が狙い目（上映135分）。上映スケジュールは11/12頃に発表され、座席はシネマサンシャインリワード会員先行で11/16 21:00から販売開始。確定したら時刻をここに反映します。</div><p class="linkline">🔗 <a href="https://godzilla-minuszero.toho-movie.jp/" target="_blank" rel="noopener">『ゴジラ-0.0』公式サイト</a> ／ <a href="https://www.cinemasunshine.co.jp/theater/gdcs/" target="_blank" rel="noopener">グランドシネマサンシャイン池袋（公式）</a></p></details>
+    <details class="tl star"><summary><span class="t">20:30 – 23:10頃</span> <span class="h">『ゴジラ-0.0』IMAXレーザー/GT レイトショー</span><span class="tag bts">グランドシネマサンシャイン池袋</span><span class="tag star">⭐ ハイライト</span></summary><div class="d">20:30以降に始まるGT上映回が狙い目（上映135分）。上映スケジュールは11/12頃に発表され、座席はシネマサンシャインリワード会員先行で11/16 21:00から販売開始。確定したら時刻をここに反映します。</div><p class="linkline">🔗 <a href="https://godzilla-minuszero.toho-movie.jp/" target="_blank" rel="noopener">『ゴジラ-0.0』公式サイト</a> ／ <a href="https://www.cinemasunshine.co.jp/theater/gdcs/" target="_blank" rel="noopener">グランドシネマサンシャイン池袋（公式）</a></p></details>
     <details class="tl"><summary><span class="t">23:30頃</span> <span class="h">深夜ごはん（でりかおんどる 新大久保2号店）</span></summary><div class="d">24時間営業の本格派。生サムギョプサル2人前（¥3,080）＋ビール＋ライスで約¥4,000–4,200の見込み。肉は2人前からで、店員さんが焼いてくれます。食後はホテルまで徒歩すぐ。</div><p class="linkline">🔗 <a href="https://delicaondoru.com/" target="_blank" rel="noopener">でりかおんどる 公式サイト</a></p></details>
     </div>
   </div>
@@ -275,9 +291,9 @@
     <details class="tl"><summary><span class="t">08:40</span> <span class="h">ホテルを出発</span></summary><div class="d">朝食を済ませて新宿駅へ。</div></details>
     <details class="tl"><summary><span class="t">09:00</span> <span class="h">新宿発 あずさ9号</span></summary><div class="d">松本 11:39 着。8号車9B（予約番号 E24123）。チケットレス特急券のみ購入済み、乗車券はSuica。</div><p class="linkline">🔗 <a href="https://www.eki-net.com/" target="_blank" rel="noopener">えきねっと（予約確認）</a></p></details>
     <details class="tl"><summary><span class="t">12:15頃</span> <span class="h">安曇野に帰宅</span></summary><div class="d">松本駅から車で約30分。</div></details>
-    <details class="tl bts"><summary><span class="t">13:45 – 15:35</span> <span class="h">参観日</span><span class="tag bts">安曇野</span></summary><div class="d">帰宅後そのまま学校へ。その後はブライト歯科へ直行します。</div></details>
+    <details class="tl bts star"><summary><span class="t">13:45 – 15:35</span> <span class="h">参観日</span><span class="tag bts">安曇野</span><span class="tag star">⭐ ハイライト</span></summary><div class="d">帰宅後そのまま学校へ。その後はブライト歯科へ直行します。</div></details>
     <details class="tl"><summary><span class="t">15:30 – 16:30</span> <span class="h">ブライト歯科</span></summary><div class="d">参観日の後、そのまま直行（予約済み）。参観日の終了（15:35）と5分重なるので、少し早めに切り上げる想定です。</div></details>
-    <details class="tl"><summary><span class="t">17:30 – 20:30</span> <span class="h">飲み会（じぶんどき 松本駅前店）</span></summary><div class="d">会場は「全席個室 じぶんどき 松本駅前店」（板前ごはんと旨い酒 じぶんどき）に決定。〒390-0811 松本市中央1-3-4 ちくま工芸ビル2・3F、松本駅お城口（東口）から徒歩2分（電話 050-2018-8902、営業時間 17:00–23:30）。歯科の後、そのまま向かいます。</div></details>
+    <details class="tl star"><summary><span class="t">17:30 – 20:30</span> <span class="h">飲み会（じぶんどき 松本駅前店）</span><span class="tag star">⭐ ハイライト</span></summary><div class="d">会場は「全席個室 じぶんどき 松本駅前店」（板前ごはんと旨い酒 じぶんどき）に決定。〒390-0811 松本市中央1-3-4 ちくま工芸ビル2・3F、松本駅お城口（東口）から徒歩2分（電話 050-2018-8902、営業時間 17:00–23:30）。歯科の後、そのまま向かいます。</div></details>
     </div>
   </div>
 </section>
